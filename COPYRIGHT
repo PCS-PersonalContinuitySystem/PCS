@@ -1,0 +1,23 @@
+PCS - Personal Continuity System
+Copyright (C) 2026 Courtney Dickson
+SPDX-License-Identifier: GPL-3.0-only
+
+PCS is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, version 3 of the License.
+
+PCS is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for details.
+
+You should have received a copy of the GNU General Public License along
+with PCS, in the file LICENSE. If not, see https://www.gnu.org/licenses/.
+
+This notice applies to the first-party PCS source, documentation, and other
+first-party files supplied with it, except where a file states otherwise.
+Separately identified third-party components retain their own copyrights
+and license terms; see THIRD_PARTY.md and their accompanying notices.
+
+The PCS licensing grant is GNU GPL version 3 only. The "or any later
+version" wording in the license document's example appendix is not an
+additional licensing grant for PCS.
