@@ -2,176 +2,129 @@
 
 **Room to think. Space to connect.**
 
-PCS is a Windows AI companion for conversation, learning, reading, and everyday plans—with continuity you can inspect and revise. Talk ideas through, work through a book, return to a project, or explore a question together. Keep useful context in your own encrypted vault instead of tying it to a single AI provider.
+PCS is a Windows AI companion for conversation, learning, reading, and everyday plans—with continuity you can inspect and revise. Talk an idea through, work through a book, return to a project, or explore a question together. Keep useful context in your own encrypted vault and choose the supported AI connection that suits you.
 
-**[Download PCS 0.9.13 for Windows][windows]** · [Release notes][release] · [Website][website] · [Discord][discord] · [Report an issue][issues]
+**[Download PCS 0.9.24 for Windows][windows]** · [Release notes][release] · [Website][website] · [Discord][discord] · [Report an issue][issues]
 
-> **0.9.13 · Pre-release · Windows x64**  
-> PCS is free, with no PCS subscription or locked features. Cloud features use your own API keys and may incur provider charges. The supported Local route uses your hardware and requires separate model and runtime downloads.
+> **0.9.24 · Pre-release · Windows x64**  
+> Free, with no PCS subscription or locked features. Cloud providers may charge for API usage. Local AI uses your hardware and separately downloaded components.
 
-## Your context, under your control
+## Follow the connections in your thinking
 
-PCS separates the AI you talk to from the saved context you keep. You can change supported providers while retaining the same local vault. Memories are not a hidden profile you must simply trust: you can inspect their sources, correct interpretations, review revisions, and remove records.
+[![Detailed synthetic example of the PCS Continuity Map, with connected themes and supporting records. Click to visit the PCS website.](assets/pcs-thought-map-sample.jpg)][website]
 
-The aim is useful continuity—not a companion that claims to remember everything or always agree with you.
+*30 themes, 89 connections, and 96 fictional saved records in the PCS 0.9.24 interface. Click the picture to visit the website, or [open the full-size image](assets/pcs-thought-map-sample.jpg).*
+
+The **Continuity Map** helps you explore recurring wording and topics across saved memories and notebooks. Select a theme to inspect its supporting records, follow connections, or compare saved-date windows. In **Library**, review a **Continue this thought** draft before placing it in a conversation.
+
+Drag nodes into a useful arrangement and keep their positions in your encrypted vault. Switch between **Connections**, **By group**, and **Circle**, pin themes, or use the accessible List view. Browsing the Map needs no running AI conversation.
+
+Connections show themes appearing together in supporting records. The view covers a bounded sample of current saved records; it does not reveal an AI's internal thoughts or establish causes, agreement, or a psychological profile.
 
 ## What you can do
 
-| Area | What it offers |
+| Workspace | Make it useful to you |
 | --- | --- |
-| **Conversation** | Talk or type with Google, OpenAI, or the supported Local model. Customize the companion's directions. On supported cloud routes, optionally share visual context from an OBS scene you choose. **OBS is a separate download, not bundled with PCS.** |
-| **Continuity** | Browse saved memories and notebooks in Library, inspect evidence and revision history, and explore recurring wording and connections in Map. Review a **Continue this thought** draft before sending it. |
-| **Materials** | Bring TXT, Markdown, selectable-text PDF, or EPUB documents. Consult passages, prepare reading notes, organize notebooks, and retain research notes or captured web sources for later use. |
-| **Learning and research** | Work through source material, organize learning steps, use practice activities, and request research on supported cloud routes. Keep original sources, AI-prepared explanations, and your own notes distinguishable. |
-| **Calendar** | Manage tasks, goals, and events in Month or Agenda view. Use it manually or choose separately how much assistance PCS may provide. |
-| **Backup and control** | Create and check encrypted vault backups, restore into an empty installation, and optionally enable automatic backups or vault locking. Original local Materials files need a separate copy. |
+| **Conversation** | Talk or type using Google, OpenAI, or Local AI. Customize the companion's directions and optionally share an OBS scene on supported routes. |
+| **Continuity** | Inspect memories, source evidence, and revision history. Correct interpretations, remove records with a reviewed scope, and explore connections in Library and Map. |
+| **Materials** | Bring TXT, Markdown, selectable-text PDF, or EPUB documents. Consult passages, prepare reading notes, organize notebooks, and retain supported web sources. |
+| **Research and Practice** | Explore questions, retain Wikipedia study notes, and work through lessons and exercises. Keep original sources, model explanations, and your own notes distinguishable. |
+| **Calendar** | Manage tasks, goals, and events in Month or Agenda view, manually or with separately enabled assistance. |
+| **Backup and control** | Create and check encrypted backups, restore into an empty installation, and optionally enable automatic backups and vault locking. |
 
-You can browse saved records, read Materials, and use manual Calendar and notebook controls **without starting an AI conversation**. Map browsing is local and read-only: its links reflect shared record wording, not proof of agreement, causation, or a psychological profile.
+You can browse saved records, read Materials, and use manual Calendar and notebook controls without starting an AI conversation. You can also change supported providers while keeping the same local vault. Saved memory remains inspectable and revisable; it is not a promise that the model will remember everything correctly.
 
-## New in 0.9.13
+## Highlights since 0.9.13
 
-### More room to finish your thought
+- **More flexible Local AI:** guided Gemma setup, experimental Custom GGUF profiles with 8K/16K/32K context options, optional OBS vision, and explicitly enabled Brave web lookup.
+- **Better local voice:** installed Windows voices, Kokoro CPU or optional NVIDIA GPU voice, reduced repeated startup work, and **Skip speech** for the current reply. Ordinary Markdown bullets and emphasis are omitted from speech while the original text stays intact.
+- **Easier setup and upgrades:** Google, OpenAI, and Local appear together in Connection. Download verified optional components or reuse existing model, runtime, and speech folders outside the installation.
+- **A more useful Map and clearer workspaces:** saved Map layouts, improved inspectors, more readable Materials and Calendar views, and expanded searchable/offline Help.
+- **More reliable edits and answers:** notebook draft protection, corrected Calendar time-zone edits and Event-to-Task conversion, and separate **PCS save results** alongside substantive Local answers.
+- **Less repeated work:** faster catalogue and memory browsing, more efficient deletion previews and Map navigation, improved Local scheduling, and clearer conversation-capacity and backup-limit guidance.
 
-OpenAI now defaults to patient semantic turn detection, with a short settling window before a spoken turn triggers a reply. When provider speech detection notices you speaking, playback yields before PCS decides whether to cancel the answer. An utterance classified as empty can release the same unheard audio without requesting another answer.
-
-**Settings → OpenAI turn completion** offers patient or balanced semantic detection and a **1.5-second silence-based fallback**. Changes apply on the next Start. Recognition errors, network conditions, and actual provider limits can still affect timing.
-
-### A more self-assured companion
-
-The default direction emphasizes a calm, capable peer: accuracy over agreement, fair disagreement backed by reasons, revisable judgments, and useful follow-through without constant praise or obligatory questions. Customized directions are preserved; only exact previously shipped defaults are replaced. These instructions guide the model, rather than guarantee its behavior.
-
-### Find once, keep in Materials
-
-Save a supported public quiz, study guide, reference page, or walkthrough as a reusable source:
-
-> “Find a public astronomy quiz and save the source in Materials.”
-
-Ask during a cloud conversation with **Search** and **Materials sharing** enabled, or use **Materials → Reference notes → Saved web sources → Add from web**. A routine search does not automatically save anything.
-
-Saved web sources keep their extracted text, source addresses, capture date, and coverage limitations. They are **encrypted vault records, separate from personal memories**. Inspect them, consult them in portions, explicitly save a bookmark or spoiler-boundary note, export them, or capture an updated version. When captured text changes, refreshing preserves the earlier snapshot and its bookmark.
-
-Later, ask PCS to return to the saved source and your bookmark. This is reusable reference material—not an invisible, expiring cache, an automatic grader, or a guarantee that a whole guide or answer key was captured.
-
-<details>
-<summary><strong>Web capture limits</strong></summary>
-
-Capture supports **one public HTTPS HTML, TXT, or Markdown page** per source, up to **2 MiB downloaded** and **240,000 text characters**. Oversized sources are rejected rather than silently shortened. The vault can retain up to **128 snapshots**, including refreshed versions.
-
-PCS does not execute JavaScript or interactive quizzes, crawl linked chapters, extract images, import remote PDFs, sign in to websites, or bypass access controls. Some sites will not allow anonymous capture. Ordinary local PDF imports remain a separate Materials feature.
-
-The conversation model reads or searches saved web text in portions of up to **6,000 characters per call**; the whole source is not automatically added to every prompt. Previously supplied passages can still accumulate in a live conversation and consume provider allowance.
-
-Bookmarks are explicit saved notes, not inferred progress. They are not automatically moved to a changed version. Deleting a snapshot requires stopping the conversation and does not delete other versions or old backups. Readable TXT exports are unencrypted. Don't-save mode blocks saved-source changes and exports; Local mode cannot fetch new web pages. Materials sharing governs model access to already-saved sources.
-
-</details>
+See the [0.9.24 release notes][release] for the full update. Skip speech stops current and queued playback; synthesis already underway may finish silently before the Local turn ends.
 
 ## Download and start
 
 | Download | Choose this for |
 | --- | --- |
-| **[PCS-0.9.13-Windows-x64.zip][windows]** | The complete Windows application, with launchers, portable Python, pinned dependencies, offline English speech-recognition assets, source, and Help. |
-| [PCS-0.9.13-Source.zip][source] | Matching development source, tests, documentation, and build support. Not a ready-to-run Windows package. |
-| [PCS-0.9.13-SHA256SUMS.txt][checksums] | SHA-256 checksums for both archives. |
+| **[PCS-0.9.24-Windows-x64.zip][windows]** | The complete portable application: Windows launchers, ordinary Python, pinned application dependencies, PCS source, and offline Help. |
+| [PCS-0.9.24-Source.zip][source] | Matching editable source, tests, documentation, and build support. Not the offline Windows installer. |
+| [PCS-0.9.24-SHA256SUMS.txt][checksums] | SHA-256 checksums for both downloads. |
 
-Most people need only the **Windows ZIP**. Choose the named release asset—not GitHub's automatically generated **Source code (zip)**. Keep every extracted package file together: the launcher verifies the package manifest.
+Most people need the **Windows ZIP**. Use the named release assets; GitHub's automatic **Source code (zip)** contains this download repository, not the full application. Keep all extracted files together because PCS verifies its package manifest.
 
-### First-time setup
+1. **Download, verify, and extract** into a fresh writable folder. Do not run inside an archive viewer or overlay an older installation.
+2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline and opens PCS in your desktop browser. No system Python installation is required.
+3. **Create a vault** and safely retain its passphrase. PCS cannot recover a forgotten passphrase. Existing users should follow [Updating and backups](#updating-and-backups).
+4. In **Settings → Connection**, choose Google, OpenAI, or **Local on this PC**. Configure the route, review learning and sharing choices, and save.
+5. Start with a short typed message. Enable **Use microphone** before Start when you want voice, and enable other sharing only as needed.
 
-1. **Download, verify, and extract** the complete Windows ZIP into a writable folder. Do not run it inside an archive viewer or overlay an older installation.
-2. Open **Start PCS.exe**. First launch prepares its bundled Python environment offline and opens PCS in your desktop browser. No system Python installation is required.
-3. **Create a vault** with a long, unique passphrase and store it safely. PCS cannot recover a forgotten passphrase. Existing users should follow [Updating and backups](#updating-and-backups) instead.
-4. Open **Settings → Connection**, configure your route, review memory and sharing choices, and save. Return to Conversation and select **Start PCS**. Begin with a short typed message; enable **Use microphone** before Start for voice.
+### Choose your connection
 
-**Google or OpenAI:** supply your own API key and check your provider's billing and limits. Memory, preparation, and research have their own provider settings and feature restrictions. [OpenAI API usage is billed separately from a ChatGPT subscription][openai-billing]. Help explains the Google free-route restrictions.
+**Google or OpenAI:** bring your own API key and check the provider's billing, limits, and data-use terms. Conversation, memory, preparation, and research have their own settings and restrictions. Help explains the supported profiles and setup.
 
-**Local:** use the supported model, runtime, and CUDA-library downloads identified in Settings and Help on compatible Windows/NVIDIA hardware. These downloads are separate from the Windows ZIP. Local conversation supports text and optional offline English voice, requires no API key, and has no cloud fallback. Local vision and network research are unavailable; do not assume arbitrary model or runtime substitutes are supported.
+**Local on this PC:** Settings guides the recommended Gemma model and verified llama.cpp/CUDA runtime on compatible Windows/NVIDIA hardware. Experimental **Custom GGUF** profiles require **Check compatibility** before saving and starting. Local conversation and memory have no cloud AI fallback.
 
-The interface runs locally, but the full launch address contains an access token. **Keep that address private.**
+Local models, AI runtimes, vision projectors, and speech packs are **optional separate downloads**, not bundled in the Windows ZIP. Typed Local use needs no speech pack. Local microphone input needs the English recognition pack; speech output can use an installed Windows voice or an optional Kokoro pack. Saved component folders can be reused across upgrades.
+
+Optional **OBS vision** uses a scene you choose; OBS is a separate installation. Optional **Brave lookup** needs a Brave Search API key and explicit online permission: public queries and page requests leave the computer, while the selected Local model interprets the results. Separately approved preparation work can use its explicitly selected cloud provider.
 
 ## Your information and your choices
 
-**Local storage does not mean every AI request stays local.** With cloud features enabled, selected content can go to the configured providers: your conversation, permitted memories, document passages, Calendar details, or OBS screenshots. Review the sharing choices and provider terms before enabling those features.
-
-The encrypted vault holds saved continuity, prepared notes, notebooks, Calendar records, saved web sources and bookmarks, and settings or credentials you chose to remember. **Original local Materials files and readable exports are outside vault encryption.** Back up and protect them separately.
-
-**Don't save this conversation** pauses new PCS saving; it does not prevent your cloud provider from receiving the conversation or turn off all existing sharing choices. **Clear chat** clears the display, not saved continuity. Hiding the memory stream does not stop learning.
-
-**Stop PCS** ends the conversation and capture. **Lock** also closes vault access. **Quit PCS** shuts down the host; wait for **PCS closed** before closing the tab. Closing the browser tab alone can leave the host running and the vault unlocked.
+- **Local storage and provider sharing are separate.** Enabled cloud features can receive conversation, permitted memories, document passages, Calendar details, or selected OBS images. Review sharing settings before use.
+- **Your encrypted vault** holds saved continuity, notebooks, prepared notes, Calendar records, saved web snapshots, remembered settings and credentials, and Map layout. Original local Materials files and readable exports are outside vault encryption.
+- **Don't save this conversation** controls new PCS saving; it does not prevent cloud providers from receiving the conversation or disable every sharing choice. Clear chat clears the display, not saved continuity. Hiding the memory stream does not stop learning.
+- **Stop** ends the conversation and capture. **Lock** also closes vault access. **Quit PCS** shuts down the host; wait for **PCS closed**. Closing the browser tab alone can leave the host running. Keep the full launch URL private because it contains an access token.
+- **Review important results.** Transcription, model answers, memory interpretations, and practice assessments can be wrong. A model's claim that it saved something is not proof: check the PCS save result and saved record. Deleting a record does not retract earlier provider disclosure or remove old backups.
 
 ## Updating and backups
 
-> **Important for 0.9.13:** saving the first web source makes that vault require **PCS 0.9.13 or newer**, even after the source is deleted. Keep a **pre-feature backup** for rollback. Merely opening an older vault without saving a web source does not add this requirement. The encryption format is unchanged.
+**Quit PCS before upgrading. Keep the earlier installation, your passphrase, and a backup of the complete cleanly stopped data folder, including Materials.** Extract the new version into a fresh folder. A new extraction does not automatically locate older data.
 
-A fresh extraction does not automatically find your older data. Keep the previous installation and a verified backup until the new copy is working. Choose **one** transfer method; do not merge independent vaults.
+Choose one transfer method:
 
-<details>
-<summary><strong>Guided method: encrypted backup and restore</strong></summary>
+- **Encrypted backup and restore:** save and check a backup, then restore it into the fresh installation instead of creating a new vault. Copy original local Materials separately, keeping their names and relative folders, and refresh documents while stopped.
+- **Complete stopped-folder copy:** after shutdown, copy the entire old data folder beside **Start PCS.exe** in the fresh extraction before launching. Keep the original, then unlock and verify the new copy. Use the actual data directory if you configured a custom location.
 
-1. Save edits, finish or cancel background work, and stop the conversation while leaving the vault unlocked. Choose **Backup & restore → Save current backup…**, save outside the installation, and wait for confirmation. Then **Quit PCS** and wait for **PCS closed**.
-2. Extract the new Windows ZIP into a fresh folder and run **Start PCS.exe**. Choose **Restore an encrypted backup instead**—do not create a new vault.
-3. Select the `.pcs` backup, enter its passphrase, and choose **Check backup**. Review the counts, select **Restore this backup**, then **Unlock existing** and check your records and settings.
-4. Copy the original files from the old **data/Materials** folder into the new **data/Materials** folder, preserving filenames, contents, and relative subfolders. With the vault unlocked and conversation stopped, choose **Materials → Refresh documents**.
+Do not merge independent vaults or run two installations against the same data directory. Reselect the automatic-backup destination after moving or restoring. In-app manual and automatic backup have a **256 MiB** limit; larger vaults use the documented stopped-folder method. Capacity warnings do not mean a new backup succeeded.
 
-Encrypted backups include saved web sources and bookmarks, along with other vault records and remembered credentials. They do **not** include original local Materials files. The in-app backup/restore limit is **256 MiB**; larger vaults require the complete-folder method.
+Some saved features raise the minimum PCS version that can reopen a vault and its later backups. For example, NVIDIA GPU voice requires 0.9.21 or newer and Custom GGUF profiles require 0.9.22 or newer. Clearing a choice does not lower that requirement. Keep a pre-upgrade backup if rollback matters, and follow **`docs/RESTORE_VAULT.md`** inside the download.
 
-</details>
+## Help, limits, and feedback
 
-<details>
-<summary><strong>Alternative: copy the complete stopped data folder</strong></summary>
+Open **Help** inside PCS or **`docs/HELP.html`** for searchable offline guidance. The downloads also include:
 
-Use **Quit PCS** and wait for shutdown. Back up the entire old **data** folder, then place a copy beside **Start PCS.exe** in a fresh extraction **before launching it**. Keep your original copy; do not merge it with another data folder.
+- `START_HERE.md` and `docs/GETTING_STARTED.md` — setup and first use.
+- `docs/RESTORE_VAULT.md` — backups, upgrades, and recovery.
+- `docs/CONTINUITY_MAP.md` — Map navigation, dates, paths, and evidence.
+- `docs/RELEASE_NOTES.md` — changes and feature boundaries.
+- `docs/developer/README.md` — development and testing.
 
-Launch, choose **Unlock existing**, verify your records and settings, and refresh Materials while stopped. This transfers both the vault and ordinary Materials files; the latter remain unencrypted. For custom data locations, use the directory your launcher actually uses.
+PCS remains a **pre-release**. Hardware compatibility, recognition quality, provider limits, and long conversations can affect results. Calendar does not synchronize Google or Outlook accounts, send invitations, or deliver reminders. Web capture supports bounded public static pages, not interactive sites, sign-ins, or a guarantee of complete capture.
 
-</details>
+For 0.9.24, **6,840 Python tests and 1,256 JavaScript tests passed**, with two documented Windows permission-dependent skips. Fresh offline installation, synthetic vault lifecycle, browser workflows, and bounded native speech checks also passed. These checks do not establish live cloud-provider, physical microphone/OBS/GPU, or every Local model's behavior.
 
-After a move or restore, reselect your automatic-backup destination and update shortcuts as needed. **Never run two instances against the same data directory.** The downloaded `docs/RESTORE_VAULT.md` covers custom paths, larger vaults, and uncertain shutdowns. Preserve recovery files rather than deleting them to force a restore.
+Report bugs through [GitHub Issues][issues] or join [Discord][discord]. Include your PCS version, provider route, reproduction steps, and expected versus actual behavior. Export **Bug report before quitting** when possible, review it, and remove private information before sharing. Never post keys, passphrases, launch tokens, or private vaults.
 
-## Help and current limits
+## Support PCS
 
-Open **Help** inside PCS, or open **`docs/HELP.html`** from the extracted package for searchable offline guidance.
-
-| Included guide | File inside the download |
-| --- | --- |
-| Quick start and setup | `START_HERE.md` and `docs/GETTING_STARTED.md` |
-| Backup, restore, and folder transfers | `docs/RESTORE_VAULT.md` |
-| Features, controls, and boundaries | `docs/REFERENCE.md` |
-| Map navigation and evidence | `docs/CONTINUITY_MAP.md` |
-| Current changes and validation | `docs/RELEASE_NOTES.md` and `docs/developer/AUDIT_0.9.13.md` |
-| Development and target-machine checks | `docs/developer/README.md` and `docs/developer/ACCEPTANCE_0.9.13.md` |
-
-These files are **inside the release packages**, not this repository's root.
-
-PCS is a **pre-release**. Transcription, vision, memory, and recall can be wrong or incomplete. Long conversations, tool activity, provider limits, or connection renewal can introduce pauses. Saved material is not proof that every page has been read; practice assessments are provisional. Calendar does not synchronize Google or Outlook accounts, book appointments, invite attendees, or deliver reminders.
-
-The 0.9.13 validation covers automated and simulated checks with disclosed skips. It does **not** establish native Windows, live-provider, physical audio/OBS/GPU, or successful live web-capture acceptance. See the [release notes][release] and included validation documents for the tested scope. Keep backups and verify important answers and saved changes.
-
-## Feedback and support
-
-Report bugs through [GitHub Issues][issues] or discuss PCS in [Discord][discord]. Include the version, provider route, expected and actual behavior, and steps to reproduce. Export **Bug report before quitting** when possible and review it before sharing; reports are not uploaded automatically. Never post API keys, passphrases, full launch addresses, private vaults, or personal conversations.
-
-**PCS is free and does not require payment.** Optional one-time contributions support development. There is no PCS subscription and no features are locked behind payment. AI-provider charges are separate.
+PCS is free. There is no PCS subscription and no feature is locked behind payment. Optional contributions help support development; AI-provider charges are separate.
 
 [![Support PCS on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)][kofi]
 
-## Source and development
+## Source and license
 
-This repository hosts releases, project documentation, and issues. **The complete application source is attached to each release**; cloning this repository or downloading GitHub's automatic source archive does not provide the application source tree.
+This repository hosts releases, project documentation, and issues. **The application source is attached to each release.** Download the matching [Source ZIP][source] and follow `SOURCE_README.md` and `docs/developer/README.md`. The Windows ZIP additionally contains the pinned runtime, offline wheelhouse, and compiled launchers. Use synthetic data and disposable vaults for development.
 
-Download **[PCS-0.9.13-Source.zip][source]** and follow `SOURCE_README.md` and `docs/developer/README.md`. The Windows ZIP also includes application source, plus the pinned runtime, offline wheelhouse, and compiled launchers omitted from the source-only export. Use synthetic data and disposable vaults for development and testing.
+Copyright (C) 2026 Courtney Dickson. First-party PCS code is licensed under **GNU GPL version 3 only (GPL-3.0-only)**. See [LICENSE](LICENSE) and [COPYRIGHT](COPYRIGHT). PCS is provided without warranty. Separately identified components retain their own terms; see [THIRD_PARTY.md](THIRD_PARTY.md) and the notices in each download.
 
-## License
-
-Copyright (C) 2026 Courtney Dickson.
-
-First-party PCS code is licensed under **GNU GPL version 3 only (GPL-3.0-only)**. See [LICENSE](LICENSE) and [COPYRIGHT](COPYRIGHT). PCS is provided without warranty. Separately identified third-party components retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md) and the notices in each download.
-
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.13/PCS-0.9.13-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.13/PCS-0.9.13-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.13/PCS-0.9.13-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.13
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.24/PCS-0.9.24-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.24/PCS-0.9.24-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.24/PCS-0.9.24-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.24
 [website]: https://pcs-personalcontinuitysystem.github.io/PCS-site/
 [discord]: https://discord.gg/558hSvYp4
 [issues]: https://github.com/PCS-PersonalContinuitySystem/PCS/issues
 [kofi]: https://ko-fi.com/pcssupport
-[openai-billing]: https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform
