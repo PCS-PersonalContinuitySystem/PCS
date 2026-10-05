@@ -4,10 +4,21 @@
 
 Personal Continuity System (PCS) brings together AI conversation, learning, reading, and everyday plans. Return to an idea, explore a question, or work through something at your own pace, with saved conversations, revisable memories, and notebooks in your local encrypted vault.
 
-**[Download PCS 0.9.57 for Windows][windows]** · [Release notes][release] · [Website][website] · [Discord][discord] · [Report an issue][issues]
+**[Download PCS 0.9.59 for Windows][windows]** · [Release notes][release] · [Website][website] · [Discord][discord] · [Report an issue][issues]
 
-> **0.9.57 · Pre-release · Windows x64**  
+> **0.9.59 · Pre-release · Windows x64**  
 > Free, with no PCS subscription or locked features. Cloud providers may charge for API usage. Local AI uses your hardware and separately downloaded components.
+
+## What's new in 0.9.59
+
+The first release since 0.9.57 brings together simpler research, conversation fixes, and a fuller Map.
+
+- **Research stays in the conversation.** With web research enabled, look up controls, DLC, hardware compatibility, settings, or unrelated questions without extra activity approval or a conversation restart. Activity or progress changes alone no longer interrupt an ongoing public lookup.
+- **More of your Map at once.** Adaptive display limits increase from 30 to **60 nodes** and from 120 to **300 connections**, depending on your records and filters.
+- **Small conversation improvements.** “Local reply stopped…” begins fading after **six seconds**, leaving your draft and conversation open. **Balanced** is the default OpenAI turn-taking setting; existing saved choices are preserved.
+- **Reliability fixes.** Improved audio buffering, Google session-renewal handling, and research cancellation, with less blocking work during saved research-note reads.
+
+See the [full release notes][release] for details.
 
 ## Follow the connections in your thinking
 
@@ -19,7 +30,7 @@ The **Continuity Map** connects recurring wording and topics across saved memori
 
 Choose **Focus rings**, **Compare**, **Grid**, **Saved-date**, or other layouts. Recenter a focus, retrace your steps with Back and Forward, arrange nodes, save named views, and add your own connection notes. Full screen and List offer different ways to explore.
 
-Curved links and their numbers show supporting saved records within a bounded sample. They do not establish confidence, causes, or a personality profile. Browsing the Map needs no running AI conversation.
+The Map can show up to **60 nodes and 300 connections**, depending on the available records and filters. Curved links and their numbers show supporting saved records within a bounded sample. They do not establish confidence, causes, or a personality profile. Browsing the Map needs no running AI conversation.
 
 ## A gentle place to begin
 
@@ -50,7 +61,11 @@ Memories and replies can still be mistaken, and recall can miss useful details. 
 
 Use **Activity** to describe a game, book, film, series, or real-life situation, including progress and the kind of help you want. Optional automatic following can recognize an activity from your current words; it does not grant memory permission.
 
-For spoiler-limited stories, review and approve the complete saved accounts PCS may use. Approvals belong to the exact activity and accounts you reviewed. Changed accounts require review again; activity or progress changes take effect in a fresh conversation. Approval controls supplied memories, but cannot guarantee a spoiler-free response or erase context already sent.
+**Enabled public web research remains available during activities**, including while automatic following is waiting or pending. Your title, edition, and known progress guide relevant story answers. PCS is instructed to ask before revealing later story events unless you clearly request them; a specific request does not change your saved preference. Spoiler avoidance is best effort: search snippets and model answers can still reveal details.
+
+Public queries stay narrow; PCS does not automatically attach personal memories, private situation details, or conversation history.
+
+**Saved-memory permissions are separate.** For spoiler-limited stories, review and approve the complete saved accounts PCS may use. Approvals belong to the exact activity and accounts you reviewed; changed accounts require review again. After an activity is established, changes to its title or progress require a fresh conversation before PCS uses the updated saved-memory context. Public web research does not require that restart or grant access to saved memories. Approval controls supplied memories; it cannot erase context already sent.
 
 **Explore another perspective** offers neutral questions using a question and up to six memories you select. Inspect or remove accounts before sharing, then save only a question you choose, with its attribution and references. **Why this?** shows recent memory handoffs without claiming to explain every response.
 
@@ -75,7 +90,7 @@ Manual reading, notebooks, Calendar, and saved-record browsing work without star
 
 ## Choose your AI connection
 
-**Google or OpenAI:** use your own API key, choose a compatible model, and save named setups. API access and billing are separate from a ChatGPT or other chat subscription. Review your provider's terms and the content-sharing choices shown in PCS.
+**Google or OpenAI:** use your own API key, choose a compatible model, and save named setups. API access and billing are separate from a ChatGPT or other chat subscription. Review your provider's terms and the content-sharing choices shown in PCS. OpenAI turn-taking defaults to **Balanced** when no preference has been saved; existing choices are kept.
 
 **Local on this PC:** the established Windows CUDA route requires a compatible NVIDIA GPU. **Settings → Connections → Local model & files** guides the recommended Gemma setup or experimental **Custom GGUF**. Custom models need compatibility checks. Save up to eight named Custom setups with model, runtime, optional projector, context, and speech choices, then switch enabled profiles while stopped.
 
@@ -91,9 +106,9 @@ Optional **Search by meaning** uses a separate Nomic model and CPU runtime witho
 
 | Download | Choose this for |
 | --- | --- |
-| **[PCS-0.9.57-Windows-x64.zip][windows]** | Complete portable application, Windows launchers, bundled Python, pinned dependencies, PCS source, and offline Help. |
-| [PCS-0.9.57-Source.zip][source] | Matching editable source, tests, documentation, and build support. |
-| [PCS-0.9.57-SHA256SUMS.txt][checksums] | SHA-256 checksums for both archives. |
+| **[PCS-0.9.59-Windows-x64.zip][windows]** | Complete portable application, Windows launchers, bundled Python, pinned dependencies, PCS source, and offline Help. |
+| [PCS-0.9.59-Source.zip][source] | Matching editable source, tests, documentation, and build support. |
+| [PCS-0.9.59-SHA256SUMS.txt][checksums] | SHA-256 checksums for both archives. |
 
 Most people need the **Windows ZIP**. GitHub's automatic **Source code (zip)** contains this download repository, not the complete application.
 
@@ -102,7 +117,7 @@ Most people need the **Windows ZIP**. GitHub's automatic **Source code (zip)** c
 3. Create a vault and keep its passphrase safe; PCS cannot recover it. Existing users should follow [Updating and backups](#updating-and-backups).
 4. Open **Settings → Connections**, configure a route, review learning and sharing choices, and save. Leave the microphone off for your first typed check with Google, OpenAI, or Local, then choose **Start PCS**.
 
-The [0.9.57 release notes][release] cover the combined changes since 0.9.50. Setup details are in `START_HERE.md` and `docs/GETTING_STARTED.md` inside the download.
+The [0.9.59 release notes][release] cover the combined changes since 0.9.57. Setup details are in `START_HERE.md` and `docs/GETTING_STARTED.md` inside the download.
 
 ## Your information and your choices
 
@@ -115,7 +130,7 @@ The [0.9.57 release notes][release] cover the combined changes since 0.9.50. Set
 
 Keep an encrypted backup, the previous application folder, and your passphrase. Copy original Materials separately. Quit PCS, extract the new version into a fresh folder, and follow `docs/RESTORE_VAULT.md`: restore into the empty installation before creating a new vault, or copy the complete stopped data folder. Never run two installations against one data directory.
 
-Some saved features raise the minimum version that can reopen the vault. Since 0.9.50, model-written revisions can require **0.9.51**; new Web extraction records, reading bookmarks, saved reflections with memory dependencies, and non-default Local backend settings can require **0.9.53**; saved activity approvals require **0.9.54**. Opening or browsing alone does not activate these requirements. Keep the pre-upgrade backup for rollback; 0.9.57 introduces no additional requirement.
+Some saved features raise the minimum version that can reopen the vault. Since 0.9.50, model-written revisions can require **0.9.51**; new Web extraction records, reading bookmarks, saved reflections with memory dependencies, and non-default Local backend settings can require **0.9.53**; saved activity approvals require **0.9.54**. Opening or browsing alone does not activate these requirements. Keep the pre-upgrade backup for rollback; 0.9.59 introduces no additional vault format or minimum-reader requirement.
 
 Native Save As, automatic backups, and in-app restore support **2 GiB** vaults. **Check for updates** is manual and never installs an update automatically.
 
@@ -123,7 +138,7 @@ Native Save As, automatic backups, and in-app restore support **2 GiB** vaults. 
 
 Open **Help** inside PCS or `docs/HELP.html` for 57 searchable guides, current screenshots, and diagrams. The package also includes guides for reading, activity memory, Map navigation, backup, and recovery.
 
-PCS remains a pre-release. Memory formation, activity recognition, reflection questions, transcription, and replies can be wrong. Calendar has no external account sync or reminders. The 0.9.57 package passed **9,941 Python tests and 2,157 JavaScript tests**, with four expected platform skips, plus offline setup, synthetic lifecycle, browser-layout, and archive checks. These do not establish live-provider, physical-device, model-quality, or long-session acceptance.
+PCS remains a pre-release. Memory formation, activity recognition, reflection questions, transcription, and replies can be wrong. Calendar has no external account sync or reminders. The release has undergone automated tests, offline setup, synthetic lifecycle checks, independent review, and archive verification. These checks do not establish live-provider, physical-device, model-quality, or long-session acceptance.
 
 Report bugs through [GitHub Issues][issues] or [Discord][discord]. Include the version, connection route, reproduction steps, and expected versus actual behavior. Download **Bug report before quitting**, review it, and remove private information before sharing. Never post keys, passphrases, launch tokens, or private vaults.
 
@@ -139,10 +154,10 @@ This repository hosts downloads, documentation, and issues. **Application source
 
 Copyright (C) 2026 Courtney Dickson. First-party PCS code is **GPL-3.0-only**, without warranty. See [LICENSE](LICENSE), [COPYRIGHT](COPYRIGHT), and [THIRD_PARTY.md](THIRD_PARTY.md). Separately identified components retain their own terms.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.57/PCS-0.9.57-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.57/PCS-0.9.57-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.57/PCS-0.9.57-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v.0.9.57
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.59/PCS-0.9.59-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.59/PCS-0.9.59-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.59/PCS-0.9.59-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v.0.9.59
 [website]: https://pcs-personalcontinuitysystem.github.io/PCS-site/
 [discord]: https://discord.com/invite/2ssCQhNgAN
 [issues]: https://github.com/PCS-PersonalContinuitySystem/PCS/issues
