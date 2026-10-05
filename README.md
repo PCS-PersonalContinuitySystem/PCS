@@ -92,7 +92,7 @@ Manual reading, notebooks, Calendar, and saved-record browsing work without star
 
 **Google or OpenAI:** use your own API key, choose a compatible model, and save named setups. API access and billing are separate from a ChatGPT or other chat subscription. Review your provider's terms and the content-sharing choices shown in PCS. OpenAI turn-taking defaults to **Balanced** when no preference has been saved; existing choices are kept.
 
-**Local on this PC:** the established Windows CUDA route requires a compatible NVIDIA GPU. **Settings → Connections → Local model & files** guides the recommended Gemma setup or experimental **Custom GGUF**. Custom models need compatibility checks. Save up to eight named Custom setups with model, runtime, optional projector, context, and speech choices, then switch enabled profiles while stopped.
+**Local on this PC:** the established Windows CUDA route requires a compatible NVIDIA GPU. **16GB VRAM Recommended** **Settings → Connections → Local model & files** guides the recommended Gemma setup or experimental **Custom GGUF**. Custom models need compatibility checks. Save up to eight named Custom setups with model, runtime, optional projector, context, and speech choices, then switch enabled profiles while stopped.
 
 Local conversation and memory have **no cloud AI fallback**. Typed use needs no speech pack. Optional offline English listening and Windows or Kokoro speech provide voice. Local OBS vision requires a matching projector. Models, AI runtimes, projectors, and speech packs remain separate downloads; keep them outside the app folder for reuse across upgrades.
 
