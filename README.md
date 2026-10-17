@@ -8,64 +8,112 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 
 **[Download for Windows][releases]** · [Release notes][releases] · [Website][website] · [Discord][discord] · [Report a bug][issues]
 
-> **PCS 0.9.88 · Pre-release · Windows x64**  
+> **PCS 0.9.102 · Pre-release · Windows x64**
+>
 > Free and open source, with no PCS subscription or paid feature tiers. Cloud API usage is billed separately by the services you choose. Local models, AI runtimes and optional speech packs are separate downloads.
 
 ![PCS 0.9.87 showing the Astronomy and Photography connection, with a saved note about lenses open for review.](https://raw.githubusercontent.com/PCS-PersonalContinuitySystem/PCS/main/assets/pcs-continuity-map-0.9.87.png)
 
-*Astronomy, photography, and a story taking shape. This fictional workspace in PCS 0.9.87 shows the saved words behind a connection—and lets you choose what to carry into your next conversation.*
+*Fictional demonstration workspace from PCS 0.9.87. Inspect the saved words behind a connection and choose what to carry into your next conversation.*
 
-**A place to work through things.** Start with conversation, then add the tools that help you continue.
+## A place to work through things
+
+Start with conversation, then add the tools that help you continue.
 
 | When you want to… | PCS gives you… |
 | --- | --- |
 | Think something through | Typed or spoken conversation, editable Companion direction and a choice of conversation pace. |
 | Return to an earlier thread | Saved conversations and revisable memories, with source inspection, corrections and permitted recall. |
-| Find a place to resume | A return card with a chosen stopping point and next step, alongside saved threads, your reading desk and upcoming Calendar plans. |
-| Keep an unfinished thought | An encrypted Keep shelf with editable notes, next steps and pins; Continue prepares a draft for your review. |
-| Follow a thought across the workspace | A context strip keeps the resumed thought within reach while you visit Materials, Continuity and Calendar. |
-| Build on something you kept | Reviewed quotations in a Notebook or lesson, or a new Calendar task, goal or event. |
-| Read and learn | Materials readers, Web snapshots, bookmarks, Read Along, reading notes, lessons and recorded Practice. |
-| Find connections | A Continuity Map with Focus, Constellations, Connections and the saved records behind them. |
-| Find your saved work | Library search across saved content, including lesson text and retained quotations, with routes back to the owning feature. |
+| Keep an unfinished thought | An encrypted Keep shelf with editable stopping points, next steps and pins. |
+| Find a place to resume | A return card that prepares an editable draft from a thought you chose to keep. |
+| Follow a connection | A Continuity Map with saved evidence, guided discovery and landmarks written in your own words. |
+| Read and learn | Materials readers, Web snapshots, bookmarks, Read Along, notebooks, lessons and Practice. |
+| Find your saved work | A searchable Library with Memories and Notebooks collections and routes back to their sources. |
+| Plan your next step | Calendar tasks, goals and events, with reviewed quotations from work you kept. |
 
-Manual reading, notes, Calendar entries and saved-record browsing work without starting an AI conversation. You can build up your workspace at your own pace.
+Manual reading, notes, Calendar entries and saved-record browsing work without starting an AI conversation.
 
-**Bring one unfinished thing.** Start with a question, decision, passage or idea that matters to you. The welcome action focuses the message box without replacing an existing draft. Write in your own words and choose **Start & send** when ready. If you would rather begin broadly, **Build my starting map** offers six optional opening questions. Preview the prompt, choose what to share, and skip or stop whenever you want. Normal saving and learning choices apply when you send it.
+## Bring one unfinished thing
 
-**Leave yourself a stopping point.** Choose **Keep a stopping point** beneath the message box. Give the thought a title, write where you stopped, and optionally add what you want to try next. Review it before saving to the encrypted Keep shelf. Pin a thought to bring it forward when you return. Edit your own note and next step, mark it resolved, reopen it or delete it when you choose. A kept PCS quotation retains its recorded wording and authorship; your next step stays separate.
+Start with a question, decision, passage or idea that matters to you. Write in your own words and choose **Start & send** when ready.
 
-**Come back with a place to begin.** Unlock your vault and choose **Load saved threads**. The return card shows your most recently updated pinned open thought, or a recent open kept thought when none is pinned. Expand the complete stopping point and inspect its sources and any changed-source warnings. **Review & continue** prepares an editable draft with the saved wording and next step. Existing unsent text is protected; you review the draft and choose whether to send it. Loading the card reads local saved records without a model request.
+If you would rather begin broadly, **Build my starting map** offers six optional opening questions. Preview the prompt, choose what to share, and skip or stop whenever you want. Your normal saving and learning choices apply.
 
-After continuing a thought, its context strip keeps the title and next step available across Conversation, Materials, Continuity and Calendar. Return to the conversation, review the saved thought or update your stopping point. Opening another source, sharing it or creating a Calendar item still uses its own controls. Lock and relevant changes to saved records retire outdated private views. The rest of the welcome briefing provides routes to saved threads, your reading desk and upcoming Calendar plans.
+Conversation pace offers **Follow my lead**, **Think with me** and **Take the lead**. **Quiet** and **Stay here** pause topic planning until you explicitly resume. Companion instructions are editable.
 
-**Memory you can inspect and revise.** Saving conversation text and allowing memory formation are separate choices. With learning enabled, PCS can create model-written accounts linked to original passages. Inspect the evidence, review earlier wording, correct an account in ordinary language or choose Forget. Your words, your corrections and model interpretations remain distinguishable.
+Local also offers an experimental, session-only option for a brief contribution during a quiet moment. It starts off and requires **Take the lead**. Preparing an idea can add processing time.
 
-Recall uses the sharing permissions you enable, and relevant corrections stay attached to the recalled material. Optional Search by meaning uses a separate local search model. Saved accounts can still be incomplete or mistaken; inspect and revise what matters to you.
+## Leave a stopping point and return later
 
-**Build on something you kept.** Add a reviewed quotation to a Notebook, lesson or Calendar entry, preserving the original wording and authorship separately from your own framing. Quotations are local display/export content; your framing follows the destination's normal sharing settings. Keeping a thought or creating a Calendar entry does not schedule automatic follow-ups or reminder delivery.
+Choose **Keep a stopping point** beneath the message box. Give the thought a title, write where you stopped, and optionally add what you want to try next. Review it before saving to the encrypted Keep shelf.
 
-**Explore the records behind a connection.** The Continuity Map lets you follow a theme, compare groups, inspect supporting records and prepare a reviewed conversation draft. Saved views, Back and Forward, and your own connection notes help you return to a line of thought. Secondary options, keyboard guidance and the visual key expand when needed, giving the graph and selected evidence more room. Search from Map opens Library, where you can follow the result back to its source.
+Pin a thought to bring it forward when you return. Edit your note and next step, mark it resolved, reopen it or delete it when you choose. A kept PCS quotation retains its recorded wording and authorship separately from your own framing.
 
-Map labels and counts describe saved material. They do not establish truth, personality traits or causes. You can inspect the wording behind a connection and decide what it means to you.
+On a later visit:
 
-**Read, discuss and learn.** Materials supports readable PDFs, EPUBs, Office and OpenDocument files, tables, slides, subtitles, HTML and common text/code formats. Search a passage, keep a bookmark, listen through an available local voice, or review an excerpt before discussing it with your selected model. Resume reading brings retained positions together while keeping their source versions clear.
+1. Unlock your vault and choose **Load saved threads**.
+2. Review the suggested stopping point, its sources and any changed-source warnings.
+3. Choose **Review & continue** to prepare an editable draft.
+4. Review the draft and decide whether to send it.
 
-Starting an ordinary conversation also preserves the last confirmed passage position for the same local document revision within the current unlocked session. Reopening the reader fetches that passage again. Lock, a change of controlling page, **Don't save**, or a source change clears this temporary position. Use saved bookmarks when you want to retain a place for a later session.
+Loading the return card reads local records without a model request. Existing unsent text is protected.
 
-Notebooks hold your notes, goals, lessons and source references. Practice can retain submitted answers and assessments when you enable it. Optional research can find public evidence and prepare study notes. Prepared reading notes and retained research notes remain distinct; conversation access to prepared notes requires their unchanged original source to be available. Scanned documents need OCR elsewhere, and some Web pages cannot be captured. Extraction notices explain omissions; model-generated explanations and assessments need review.
+After continuing a thought, a context strip keeps its title and next step available across Conversation, Materials, Continuity and Calendar. **Explore in Map** carries that thought into Map as a temporary reminder.
 
-**Bring a piece of text into the conversation.** Attach or drop a UTF-8 `.txt` or `.md` file, review the complete text, then choose **Use in this chat**, **Keep for later**, or **Save reviewed text in Materials**. Existing drafts are protected, and oversized actions explain their limits instead of silently shortening the text. Saving in Materials requires PCS to be stopped and creates an ordinary local file outside the encrypted vault. Back it up separately; importing does not automatically share it with a provider or prepare reading notes.
+## Memory you can inspect and revise
 
-**Choose how much initiative you want.** Conversation pace offers **Follow my lead**, **Think with me** and **Take the lead**. Quiet and Stay here pause topic planning until you explicitly resume. Companion instructions are editable, and reply quality depends on your chosen model.
+Saving conversation text and allowing memory formation are separate choices. With learning enabled, PCS can create model-written accounts linked to original passages.
 
-Conversation guidance asks the model to work from an explicitly chosen stopping point, respect corrections and changes of direction, inspect evidence when requested, and allow a conversation to finish without an unnecessary follow-up question. These instructions guide the selected model; they do not guarantee its response or give it additional sharing permissions.
+Inspect the evidence, review earlier wording, correct an account in ordinary language or choose **Forget**. Your words, your corrections and model interpretations remain distinguishable.
 
-Local also has an experimental, session-only option for a brief contribution during a quiet moment. It starts off, requires Take the lead and an eligible idle Conversation page, and cannot use tools or save the contribution as a source. Typing, leaving the page, Quiet, Stay here and Stop revoke pending openings. Preparing an idea can add processing time. This option is available only with Local.
+Recall follows the sharing permissions you enable, and relevant corrections stay attached to the recalled material. Saved accounts and AI answers can still be incomplete or mistaken; inspect and revise what matters to you.
 
-Optional **Jev** uses TypeSafe to choose among ideas proposed by your conversation model. It starts off, requires its own key and a sharing review, and adds a cloud request. Local use requires separate cloud consent. Jev does not independently browse your vault or write the reply, and it does not guarantee a better conversation. Optional screen help and tutoring have their own setup and permissions too.
+In 0.9.102, Local checks whether a question needs saved context before replying. Personal questions such as “Who am I?” can initiate recall without a separate instruction to remember. PCS also distinguishes failed or blocked lookups from completed searches with no matching result.
 
-**Choose where the AI runs.**
+### Optional memory hints
+
+**Help notice relevant memories in conversation**, under **Settings → Memory & sharing → Personal memory**, offers small context hints when enabled.
+
+- Local and Meta can receive matching cues for typed and completed spoken turns.
+- Supported Google and OpenAI models can receive a small startup directory.
+- Existing memory-sharing permission is still required.
+- Hints are omitted when context space or eligibility cannot be established.
+
+This setting starts off. It is separate from Local’s recall-initiation repair; enabling hints is not required for that repair to work.
+
+## Explore the records behind a connection
+
+The Continuity Map offers **Focus**, **Constellations** and **Connections**, with access to the saved records behind the display.
+
+Choose **Discover a connection** to explore up to three existing connections. Inspect the evidence, try another connection, or **Leave a landmark** in your own words. Your landmarks help you return to a useful line of thought.
+
+Map labels and counts describe saved material. They do not establish truth, personality traits or causes. You decide what a connection means to you.
+
+### Optional Jev exploration
+
+In **Continuity → Library**, select a record and choose **Explore connections**. Add a question, review the proposed records, and choose which excerpts may be shared.
+
+Jev can assess relevance, repetition, added information or possible disagreement within that reviewed set. Suggestions remain provisional and do not automatically create memories or change the Map.
+
+This optional trial requires a TypeSafe key and separate sharing permission for each request. Ordinary Library browsing and Map exploration work without it.
+
+Jev also has a separate conversation-carrying role that can choose among ideas proposed by your conversation model. That role starts off, has its own review, and requires additional cloud consent when used with Local.
+
+## Read, discuss and learn
+
+Materials supports readable PDFs, EPUBs, Office and OpenDocument files, tables, slides, subtitles, HTML and common text/code formats.
+
+Search a passage, keep a bookmark, listen through an available local voice, or review an excerpt before discussing it with your selected model. Compact browsing lists and larger detail areas leave more room for the material itself.
+
+Notebooks hold notes, goals, lessons and source references. Practice can retain submitted answers and assessments when enabled. Optional research can find public evidence and prepare study notes.
+
+Prepared reading notes and retained research notes remain distinct. Scanned documents need OCR elsewhere, and some Web pages cannot be captured. Extraction notices explain omissions.
+
+You can also attach or drop a UTF-8 `.txt` or `.md` file and review it before choosing **Use in this chat**, **Keep for later**, or **Save reviewed text in Materials**. Saving in Materials creates an ordinary file outside the encrypted vault; back it up separately.
+
+Reviewed quotations can be added to a Notebook, lesson or Calendar entry while preserving their original wording and authorship. Keeping a thought or creating a Calendar entry does not schedule automatic follow-ups or reminder delivery.
+
+## Choose where the AI runs
 
 | Connection | What you need |
 | --- | --- |
@@ -74,48 +122,90 @@ Optional **Jev** uses TypeSafe to choose among ideas proposed by your conversati
 | **Meta** | Your Meta API key and account access. Typed conversation needs no local language model or speech pack. Voice uses local transcription and Windows or Kokoro speech. |
 | **Experimental Alibaba Qwen** | Its region/workspace setup and API key. This route is voice-only and has a smaller feature set. |
 
-Conversation, memory processing and reading preparation can use separate supported providers. Google, OpenAI and Meta also support notebook drafts and research through their supported models and tools. Optional helper keys can be configured separately; switching providers does not silently reuse another provider's key. Meta does not supply native speech-to-speech or vector embeddings in PCS.
+Conversation, memory processing and reading preparation can use separate supported providers.
 
-Local conversation and memory have no cloud AI fallback. For offline use, download the required components first, use Local for the roles you need, and leave online tools and cloud preparation off. Brave lookup sends public queries and page requests outside your computer; Local + Jev and cloud preparation send their separately approved inputs to their stated providers.
+Local conversation and memory have no cloud AI fallback. For offline use, download the required components first, select Local for the roles you need, and leave online tools and cloud preparation off.
 
-Typed Local conversation needs no listening pack. Optional English microphone input, Windows or Kokoro speech, local semantic search and compatible OBS vision can be added separately. Saved connections let you switch setups while stopped. Windows Radeon Vulkan text and Ubuntu browser/cloud operation remain experimental previews; macOS is not included.
+Separately enabled services still send information outside your computer:
 
-**Get started.**
+- Brave lookup sends public queries and page requests.
+- Local + Jev sends separately reviewed conversation information to TypeSafe.
+- Library exploration sends its separately approved saved excerpts to TypeSafe.
+- Cloud preparation uses the provider and sharing choices selected for that role.
 
-1. Open [Releases][releases] and download **PCS-0.9.88-Windows-x64.zip**. Extract the complete ZIP into a fresh writable folder.
+Typed Local conversation needs no listening pack. Optional English microphone input, Windows or Kokoro speech, local semantic search and compatible OBS vision can be added separately.
+
+Windows Radeon Vulkan text and the Ubuntu source preview remain experimental. macOS is not currently included.
+
+## What changed since 0.9.88?
+
+PCS 0.9.102 brings together the work from 0.9.89–0.9.102:
+
+- More natural personal and project recall, with clearer lookup failure notices.
+- Optional memory hints that respect corrections, sharing choices and available context.
+- More relevant screen use: Local supplies an available frame to the reply only when needed.
+- Map discovery, owner-written landmarks and an **Explore in Map** route from a resumed thought.
+- Roomier Materials and Library views, refreshed Help and optional Jev Library exploration.
+- Search improvements and explicit retirement of an old provider index without deleting memories.
+- Better protection for unsent drafts and more dependable Local Stop, Lock and Quit handling.
+- Better retention of unchanged reviewed settings, optional thinking sound and clearer OpenAI transcript display.
+
+See the [release notes][releases] for the full changes, performance observations and testing limits.
+
+## Get started
+
+1. Open [Releases][releases] and download **PCS-0.9.102-Windows-x64.zip**. Extract the complete ZIP into a fresh writable folder.
 2. Open **Start PCS.exe**. The first launch prepares its bundled Python environment offline; no system Python installation is needed.
 3. For a new workspace, use **Quick Setup** to create your vault and choose a connection. Keep the passphrase safe. **Existing users: restore an encrypted backup before creating a new vault.**
-4. Enter your Google, OpenAI or Meta API key, or follow **Local model & files** to install the required Local components. Review your saving and sharing choices. **Settings → Connections** remains available for full setup.
-5. In a new setup, microphone use starts off. Once setup is complete and the vault is unlocked, bring one unfinished thing, type your message and choose **Start & send**. Add voice, Materials sharing, Vision and optional tools after that works. Experimental Qwen requires voice instead.
-6. When you reach a useful stopping point, choose **Keep a stopping point** and review what you want to retain. On a later visit, use **Load saved threads** and **Review & continue** to pick it up again.
+4. Enter your Google, OpenAI or Meta API key, or follow **Local model & files** to install the required Local components. Review your saving and sharing choices.
+5. Microphone use starts off in a new setup. Once the vault is unlocked, type a message and choose **Start & send**. Add voice, Materials sharing, Vision and optional tools after that works. Experimental Qwen requires voice instead.
+6. When you reach a useful stopping point, choose **Keep a stopping point** and review what you want to retain.
 
-The package includes `START_HERE.md`, a full Getting started guide and searchable offline Help. Keep the application files together: the launcher verifies the package manifest. Use **Quit PCS** when finished; closing the browser tab alone can leave the application running.
+The package includes `START_HERE.md`, a full Getting started guide and searchable offline Help.
 
-**Your data and your sharing choices.**
+Keep the application files together: the launcher verifies the package manifest. Use **Quit PCS** when finished; closing the browser tab alone can leave the application running.
+
+## Your data and sharing choices
 
 - Saved continuity lives in your local encrypted vault. Original Materials files, imported text copies and readable exports are outside that encryption.
 - Cloud features receive the information allowed by their controls. **Don't save** controls PCS retention; it does not prevent the selected provider from receiving the conversation.
 - Corrections and forgetting affect PCS records and dependent saved work. They cannot retract information already disclosed or erase earlier backups.
-- Keep your vault passphrase safe. PCS cannot recover it. Changing it affects the working vault; existing backups keep their original passphrases.
-- Stop ends the connection, Lock closes vault access, and Quit PCS shuts down the application. They are separate controls.
+- PCS cannot recover a lost vault passphrase. Changing it affects the working vault; existing backups keep their original passphrases.
+- **Stop**, **Lock** and **Quit PCS** are separate controls: end the connection, close vault access, or shut down the application.
 
-Before upgrading, save an encrypted backup, copy original Materials separately and quit PCS. Extract the update into a fresh folder, open **Start PCS.exe**, and choose **Restore an encrypted backup instead** before creating a vault. Check the backup, review its counts and restore it. Reconnect unchanged Materials under `data/Materials`, preserve their filenames and subfolders, and use **Materials → Documents → Refresh list** while stopped. Choose your automatic-backup destination again after restoring. Keep your previous installation and pre-upgrade backup until you have checked the restored copy. Never run two copies against the same data folder.
+## Upgrading and backups
 
-**Saving pin/next-step metadata or editing an existing kept note with the new controls requires PCS 0.9.88 or newer to reopen that vault.** Opening or browsing alone does not add this requirement. Retain a pre-upgrade backup if you may need to return to an older version.
+Before upgrading, create an encrypted vault backup, copy original Materials files separately, and quit PCS.
 
-Earlier saved-feature requirements still apply. Some Meta conversation data and larger combined draft recovery require **0.9.80+**; newer Meta helper settings, credentials and visual provenance can require **0.9.81+**. **Check backup** reports the minimum reader, and Help includes the full compatibility table.
+Extract the update into a fresh folder. Open **Start PCS.exe** and choose **Restore an encrypted backup instead** before creating a vault. Check the backup, review its counts and restore it. Follow the included restore guide to reconnect Materials and choose your automatic-backup destination again.
 
-Automatic backups retain the newest copy from each of the 14 most recent days and eight most recent weeks. They run when enabled, with PCS open, its browser page connected, the vault unlocked and the conversation stopped. They pause during **Don't save**. Copy a backup elsewhere to retain it beyond that window; manual and protected backups are excluded from automatic pruning.
+Keep your previous installation and pre-upgrade backup until you have checked the restored copy. Never run two copies against the same data folder.
 
-**What's new in 0.9.88?** Editable stopping points, separate next steps and pins build on the existing Keep shelf. A focused return card and shorter first-use path help you start and resume a thought. Context stays within reach across the workspace, ordinary Start preserves the current local reading position, and return/Map layouts give content more room. Conversation guidance addresses chosen context, corrections and natural endings. The [release notes][releases] cover the update and its compatibility requirements.
+PCS 0.9.102 introduces no new vault capability requirement. Existing saved-feature requirements still apply. Saving pin/next-step metadata or editing kept notes with those controls requires **PCS 0.9.88 or newer** to reopen that vault.
 
-**Help, feedback and development.** PCS is under active development. AI replies, memories, transcription and research can be wrong. The final 0.9.88 candidate passed **12,812 Python tests** and **2,990 JavaScript tests**, with six platform- or permission-dependent Python skips. Fresh offline installation, 12 synthetic browser checks, two native launch/Lock/shutdown cycles, and independent package and delivered-file verification also passed. These checks used fictional data and simulated providers; they do not establish live-provider response quality, next-day human usefulness, personal-vault migration, physical-device behavior or long-session reliability. A next-day walkthrough and conversation evaluation scenarios are included for further assessment.
+**Check backup** reports the minimum reader, and Help includes the complete compatibility table.
+
+## Help, feedback and development
+
+PCS is under active development. AI replies, memories, transcription and research can be wrong.
+
+The final 0.9.102 candidate passed **13,896 Python tests** and **3,210 JavaScript tests**, with six documented platform exclusions. Fresh offline installation, browser checks, two launcher/lifecycle cycles, and independent package and delivered-file verification also passed.
+
+Actual Local evaluation covered **11 fictional cases and 12 typed turns** using Gemma 4 12B and synthetic images. These checks do not establish reliability for every model, personal vault, physical device or long conversation.
 
 Use [GitHub Issues][issues] or [Discord][discord] for feedback. Include your version, connection, steps and expected result. Review diagnostics before sharing; exclude keys, passphrases, launch tokens and personal records.
 
-This repository hosts project information and release downloads. Developers should choose **PCS-0.9.88-Source.zip** from the release assets, which includes the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository. The release also provides **PCS-0.9.88-SHA256SUMS.txt** for archive verification.
+This repository hosts project information and release downloads. Developers should download **PCS-0.9.102-Source.zip** from the release assets for the application source, tests and build support. GitHub’s automatic **Source code** archive contains this download repository.
 
-PCS first-party code is licensed under **GPL-3.0-only**, without warranty. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development; provider charges remain separate.
+The release also provides **PCS-0.9.102-SHA256SUMS.txt** for archive verification.
+
+## License and support
+
+PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own license terms.
+
+See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party].
+
+Optional contributions through [Ko-fi][kofi] help support development. Provider charges remain separate.
 
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [website]: https://pcs-personalcontinuitysystem.github.io/PCS-site/
