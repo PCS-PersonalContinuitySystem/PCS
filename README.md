@@ -10,7 +10,7 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 
 **Linux and Mac:** [Experimental Linux x64][linux-experimental] · [Experimental macOS for Apple silicon][mac-experimental] · [Previous release page and source downloads][older-platforms]
 
-> **PCS 0.9.120 · Windows x64 · Under active development**
+> **PCS 0.9.121 · Windows x64 · Under active development**
 >
 > Free and open source, with no PCS subscription or paid feature tiers. Provider API charges and any subscription used for ChatGPT sign-in are separate. Local models, AI runtimes and optional speech packs are separate downloads.
 
@@ -36,7 +36,7 @@ Manual reading, notes, Calendar entries and saved-record browsing work without s
 
 ### Windows
 
-1. Download **[PCS-0.9.120-Windows-x64.zip][windows]** and extract the complete ZIP into a fresh writable folder.
+1. Download **[PCS-0.9.121-Windows-x64.zip][windows]** and extract the complete ZIP into a fresh writable folder.
 2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline; no system Python installation is needed.
 3. Use **Quick Setup** to create your encrypted vault and choose a connection. Keep the passphrase safe. **Existing users: restore an encrypted backup before creating a new vault.**
 4. Review what you want to save and share. Quick Setup includes a **Conversation only** option. For **Claude API** or **Sign in with ChatGPT**, unlock the vault and open **Settings → Connections**. Local setup is under **Local model & files**.
@@ -142,10 +142,12 @@ Typed Local conversation needs no listening pack. Optional English microphone in
 
 **Kokoro remains the recommended local voice for everyday use.** Meta, Claude and ChatGPT can also try **KittenTTS 2 on CPU or NVIDIA GPU**, both experimental. Settings offers verified runtime and model downloads and a timed voice sample. Kitten is substantially heavier than Kokoro, and CPU generation can be slow. Review its model license before downloading. **Powered by KittenML.** Local AI conversations continue to use Windows or Kokoro voices.
 
-The current 0.9.120 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
+The current 0.9.121 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
 
 ## What's new since 0.9.114?
 
+- **New in 0.9.121:** automatic memory processing retries eligible temporary provider failures during a conversation, with cooldowns and the existing processing schedule. Each attempt rechecks current saving and sharing permissions.
+- **New in 0.9.121:** recovery for indexing later memory batches after a temporary search-embedding failure, more accurate provider error handling and clearer saving-status messages. Earlier missing search vectors still use **Rebuild memory search**.
 - Claude and ChatGPT connections, including personal-memory learning and recall through the selected connection.
 - A redesigned Map with labeled Constellations, navigation trails, theme comparisons and a single evidence panel.
 - Saved topic labels by default, clearer monthly save patterns and repairs for long labels and record bodies.
@@ -153,7 +155,7 @@ The current 0.9.120 download is Windows x64. For Linux and Mac, use the experime
 - Optional experimental Kitten CPU/GPU speech with managed downloads, plus speech startup and cancellation repairs.
 - Repairs to Local memory recall after pending saves and reduced repeated processing of saved-area summaries.
 
-See the **[0.9.120 release notes][release]** for details and upgrade guidance.
+See the **[0.9.121 release notes][release]** for details and upgrade guidance.
 
 ## Your data and sharing choices
 
@@ -177,16 +179,16 @@ If upgrading an older proactive-help setup, complete the one-time review through
 
 PCS is under active development. AI replies, memories, transcription and research can be wrong. Share feedback through [GitHub Issues][issues] or [Discord][discord]. Include your PCS version, connection and reproduction steps. Review diagnostics before sharing and remove keys, passphrases, launch tokens and personal records.
 
-This repository hosts project information and downloads. **[PCS-0.9.120-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
+This repository hosts project information and downloads. **[PCS-0.9.121-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
 
-Use **[PCS-0.9.120-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
+Use **[PCS-0.9.121-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
 
 PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own terms. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.120/PCS-0.9.120-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.120/PCS-0.9.120-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v.0.9.120/PCS-0.9.120-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v.0.9.120
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.121
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [older-platforms]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.114
 [linux-experimental]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.114/PCS-0.9.115-Linux-x64-Experimental.tar.gz
