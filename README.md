@@ -10,24 +10,25 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 
 **Linux and Mac:** [Experimental Linux x64][linux-experimental] · [Experimental macOS for Apple silicon][mac-experimental] · [Previous release page and source downloads][older-platforms]
 
-> **PCS 0.9.121 · Windows x64 · Under active development**
+> **PCS 0.9.139 · Windows x64 · Under active development**
 >
 > Free and open source, with no PCS subscription or paid feature tiers. Provider API charges and any subscription used for ChatGPT sign-in are separate. Local models, AI runtimes and optional speech packs are separate downloads.
 
-![PCS 0.9.120 Continuity Map showing connections between astronomy, photography and creative writing, alongside the saved records behind a connection.](assets/pcs-continuity-map-0.9.120.png)
+![PCS 0.9.139 Continuity Map focused on Harrow Point, a place named in saved observations about astrophotography, an astronomy club and a night-sky atlas, alongside the saved records behind it.](assets/pcs-continuity-map-0.9.139.png)
 
-*One unfinished project, several ways back in. PCS 0.9.120 with fictional demonstration data in the actual app interface; not a live AI conversation. The Map runs locally without a model request.*
+*One place, several ways back in. PCS 0.9.139 in the actual app interface, with fictional demonstration records in the Local memory format; not a live AI conversation. Harrow Point links three saved subjects because it is named in observations from each. The Map runs locally without a model request.*
 
 ## A place to work through things
 
 | When you want to… | PCS gives you… |
 | --- | --- |
 | Think something through | Typed or spoken conversation, editable Companion direction and a choice of conversation pace. |
-| Pick up an unfinished thought | An encrypted Keep shelf with stopping points, next steps and pins, plus an editable draft when you return. |
+| Pick up an unfinished thought | An encrypted shelf of stopping points, next steps and pins, plus an editable draft when you return. |
 | Understand what was remembered | Saved conversations and revisable memories, with original passages, corrections and sharing controls. |
 | Follow how an idea changed | Links between exact memory revisions, settled marks and named lessons with supporting stories. |
-| Find an unexpected connection | A Continuity Map of saved topics, with the records behind each connection and space for your own notes. |
-| Read and learn | Materials readers, bookmarks, Read Along, Prepared Notes, notebooks and Practice. |
+| Find an unexpected connection | A Continuity Map of saved topics and the people, places and projects in them, with the records behind each connection and space for your own notes. |
+| See how PCS's own view develops | Optional PCS Perspective: PCS's interests, reflections and open questions, kept apart from your continuity and open to inspection. |
+| Read and learn | Materials readers, bookmarks, Read Along, Prepared notes, notebooks and Practice. |
 | Find your work and plan ahead | A searchable Library and Calendar tasks, goals and events. |
 
 Manual reading, notes, Calendar entries and saved-record browsing work without starting an AI conversation.
@@ -36,14 +37,16 @@ Manual reading, notes, Calendar entries and saved-record browsing work without s
 
 ### Windows
 
-1. Download **[PCS-0.9.121-Windows-x64.zip][windows]** and extract the complete ZIP into a fresh writable folder.
+1. Download **[PCS-0.9.139-Windows-x64.zip][windows]** (51 MB) and extract the complete ZIP into a fresh writable folder.
 2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline; no system Python installation is needed.
-3. Use **Quick Setup** to create your encrypted vault and choose a connection. Keep the passphrase safe. **Existing users: restore an encrypted backup before creating a new vault.**
-4. Review what you want to save and share. Quick Setup includes a **Conversation only** option. For **Claude API** or **Sign in with ChatGPT**, unlock the vault and open **Settings → Connections**. Local setup is under **Local model & files**.
+3. Choose **Set up PCS**. Four short steps, **Workspace, Connection, Sharing and Review**, create your encrypted vault and choose a connection. Keep the passphrase safe. **Existing users: restore an encrypted backup before creating a new vault** (under **Vault options & restoring a backup** in the first step).
+4. Review what you want to save and share. Setup includes a **Conversation only** option. For **Claude API** or **Sign in with ChatGPT**, unlock the vault and open **Settings → Connections**. Local setup is under **Local model & files**.
 5. Type a message and choose **Start & send**. Microphone use starts off in a new setup. Add voice and other optional tools when you want them; experimental Qwen requires voice.
 6. At a useful stopping point, choose **Keep a stopping point** and review what you want to retain.
 
-The download includes getting-started and restore guides, plus searchable offline Help. Keep the application files together: the launcher checks the package manifest. Use **Quit PCS** when finished; closing the browser tab alone can leave the application running.
+Not ready to set up? **See a fictional example** on the welcome screen shows PCS with demonstration records, without adding anything to your vault.
+
+The download includes getting-started and restore guides, plus searchable offline Help. A Settings task finder helps you locate controls. Keep the application files together: the launcher checks the package manifest. Use **Quit PCS** when finished; closing the browser tab alone can leave the application running.
 
 ### Linux and Mac (experimental)
 
@@ -66,7 +69,7 @@ If you prefer a broader start, **Build my starting map** offers six optional ope
 
 ### Leave a stopping point
 
-Keep a title, where you stopped and an optional next step. Review the note before saving it to the encrypted Keep shelf. Pin it, edit it, mark it resolved, reopen it or delete it when you choose.
+Keep a title, where you stopped and an optional next step. Review the note before saving it to your encrypted shelf. Pin it, edit it, mark it resolved, reopen it or delete it when you choose.
 
 On a later visit, unlock your vault and choose **Load saved threads**. Review the suggested stopping point and its sources, then choose **Review & continue** to prepare an editable draft. You decide whether to send it. Loading the return card reads local records without a model request, and existing unsent text is protected.
 
@@ -81,9 +84,9 @@ The **Continuity Map** opens on **Constellations**, with readable labels based o
 - **Keep what matters.** Add a connection note, leave a landmark in your own words, or choose **Continue in Conversation**.
 - **Explore at your own pace.** Try **Discover a connection**, or browse freely. Filters and coverage are under **Map settings**; saved views and connection notes are under **Views & notes**.
 
-Themes use **saved labels** by default, preserving phrases such as “Bread making.” Optional modes include wording from records. Newly formed memories can carry topic labels; existing memories are not rewritten. Monthly save patterns show when themes have been saved or edited more often.
+Themes come from **saved labels and repeated wording** by default, preserving phrases such as “Bread making.” **Saved labels only** is available under **Map settings**. Local memory keeps one account per subject and adds later observations to it, so the Map counts each current observation: a subject you return to often appears larger, and the people, places and projects named in it become linked themes. A name that appears under two subjects connects them. Monthly save patterns show when themes have been saved or edited more often.
 
-The Map runs on your PC without calling a model. A line means two themes occur in the same saved record. It does not establish agreement, cause or a personality trait. Open the evidence and decide what the connection means to you.
+The Map runs on your PC without calling a model. A line means two themes occur in the same saved record or observation. It does not establish agreement, cause or a personality trait. Open the evidence and decide what the connection means to you. Names are recognised by their capital letters, so a name written in lowercase is missed.
 
 Whole-archive indexing supports up to **50,000 memories** and **250 themes**. The encrypted index follows saves, corrections and forgetting. If you already use it, choose **Map settings → Coverage → Finish indexing** after upgrading to refresh it locally.
 
@@ -91,7 +94,9 @@ Whole-archive indexing supports up to **50,000 memories** and **250 themes**. Th
 
 Saving conversation text and allowing memory formation are separate choices. With learning enabled, PCS can create model-written accounts linked to original passages. Inspect the evidence, review earlier wording, correct an account in ordinary language or choose **Forget**. Your words, your corrections and model interpretations remain distinguishable.
 
-Recall follows your sharing permissions and keeps relevant corrections attached. Local checks whether a question needs saved context before replying. A blocked or failed lookup is distinguished from a completed search with no match. Memories and AI answers can still be incomplete or mistaken.
+When you ask PCS to remember something, the request gets its own check, and the result card shows whether the save was confirmed, did not succeed or left a record unchanged. Correction screens show that saving your wording and rebuilding semantic search are separate steps; saved corrections keep their history and current status.
+
+Recall follows your sharing permissions and keeps relevant corrections attached. It can bring back the original conversation passages behind a saved account, including the evidence for a correction. Recalled material labels which words were yours, which were the assistant's and which accounts you edited, so the model can tell them apart. Local checks whether a question needs saved context before replying. A blocked or failed lookup is distinguished from a completed search with no match. Memories and AI answers can still be incomplete or mistaken.
 
 Open a memory and choose **Settled, links & lessons** to:
 
@@ -101,15 +106,26 @@ Open a memory and choose **Settled, links & lessons** to:
 
 Links and lessons retain the revisions you reviewed and identify changed or unavailable references. Forgetting a memory removes its revisions and updates dependent records.
 
-**Claude and signed-in ChatGPT now support personal-memory learning, Remember requests and recall.** Under **Settings → Memory & sharing**, choose **Follow conversation** or select either provider explicitly. Existing sharing choices still control what reaches that connection.
+**Claude and signed-in ChatGPT support personal-memory learning, Remember requests and recall.** Under **Settings → Memory & sharing**, choose **Follow conversation** or select either provider explicitly. Existing sharing choices still control what reaches that connection.
 
 **Help notice relevant memories in conversation** is included in **Recommended continuity** and can be changed under **Settings → Memory & sharing**. It requires memory-sharing permission. Supported routes can use a compact overview or matching cues to help find saved context. A cue sent to a cloud provider shares that information; hints do not guarantee a relevant memory will be found.
 
+## PCS Perspective (optional)
+
+PCS Perspective is a separate space in the encrypted vault for PCS's own developing interests, reflections and open questions. It is kept apart from your saved continuity, and it starts **off**.
+
+- Inspect each record's wording, supporting references, uncertainty, model authorship and revision history.
+- Explore how its views relate in a dedicated Perspective Map.
+- Carry current perspectives and unfinished inquiries between supported models.
+- Optionally allow bounded exploration during an active conversation, with focused thinking pauses that turn the microphone off and offer **Return to conversation**.
+
+Exploration uses the selected Preparation model and can make additional model requests. It does not browse the web or read Materials on its own. These records make a developing perspective inspectable; they do not establish subjective experience.
+
 ## Read, discuss and learn
 
-**Materials** supports readable PDFs, EPUBs, Office and OpenDocument files, tables, slides, subtitles, HTML and common text/code formats. Find a passage, keep a bookmark, listen through an available local voice, or review an excerpt before sharing it with your selected model.
+**Materials** supports readable PDFs, EPUBs, Office and OpenDocument files, tables, slides, subtitles, HTML and common text/code formats, with file-format tiles, reading-time estimates and highlighted passage search. Find a passage, keep a bookmark, listen through an available local voice, or review an excerpt before sharing it with your selected model.
 
-**Prepared Notes** support longer reading projects. **Prepare book** works through an explicitly approved sequence and saves checkpoints; **Resume** lets you review the next scope. Notebooks hold notes, goals, lessons and source references. Practice can retain submitted answers and assessments when enabled.
+**Prepared notes** support longer reading projects. **Prepare book** works through an explicitly approved sequence and saves checkpoints; **Resume** lets you review the next scope. Notebooks hold notes, goals, lessons and source references. Practice can retain submitted answers and assessments when enabled.
 
 You can also attach or drop a UTF-8 `.txt` or `.md` file and review it before choosing **Use in this chat**, **Keep for later**, or **Save reviewed text in Materials**. A Materials copy is an ordinary file outside the encrypted vault; back it up separately. Scanned documents need OCR elsewhere, and some Web pages cannot be captured.
 
@@ -124,38 +140,38 @@ Optional **Explore connections** in the Library lets you select records, add a q
 | **Local on this PC** | Compatible hardware, a supported model and verified runtime. Recommended Gemma/CUDA setup needs a compatible NVIDIA GPU; experimental Custom GGUF setups have their own checks. |
 | **Google or OpenAI API** | Your provider API key and access to a compatible model. Supported routes include cloud audio as well as text. API billing is separate from consumer chat subscriptions. |
 | **Meta** | Your Meta API key and account access. Typed conversation needs no local language model or speech pack; voice uses local listening and speech. |
-| **Claude API** | Your Anthropic API key and a compatible model. Typed conversation, permitted PCS tools, personal memory and optional local listening and speech. |
-| **Sign in with ChatGPT** | An eligible signed-in account and an available model, subject to account access and usage limits. Typed conversation, permitted PCS tools, personal memory and optional local listening and speech. |
+| **Claude API** | Your Anthropic API key and a compatible model. Typed conversation, permitted PCS tools, personal memory, Preparation and notebooks, PCS Perspective, image sharing, web lookup and Wikipedia Study, with optional local listening and speech. |
+| **Sign in with ChatGPT** | An eligible signed-in account and an available model, subject to account access and usage limits. The same feature set as Claude API, using your signed-in account. |
 | **Experimental Alibaba Qwen** | Its region/workspace setup and API key. Voice-only, with a smaller feature set. |
 
-**ChatGPT sign-in is separate from the OpenAI API connection.** It does not import ChatGPT history, provide unlimited usage or silently fall back to API billing.
+**ChatGPT sign-in is separate from the OpenAI API connection.** It does not import ChatGPT history, provide unlimited usage or silently fall back to API billing. Usage-limit messages distinguish temporary throttling, an exhausted allowance and unavailable usage information.
 
-Claude and ChatGPT do not support picture sharing or Web/Study research in this build. Materials preparation and outline drafting still require an explicitly selected **Google, OpenAI, Meta or Local** helper. Unsupported Vision and Research choices turn off when you select a connection that cannot use them; returning to a supported connection does not turn those permissions back on.
+Feature coverage still varies by route, model and account. Claude, ChatGPT and Meta do not provide semantic-search (embedding) maintenance; text and navigation recall remain available. Unsupported Vision and Research choices turn off when you select a connection that cannot use them; returning to a supported connection does not turn those permissions back on. Preparation, memory review and Perspective exploration can make additional model requests and incur provider charges.
 
 Local conversation and memory have no cloud AI fallback. For offline use, download the required components first, use Local for the roles you need, and leave online tools and cloud preparation off. Separately enabled Brave lookup sends public queries and page requests; Local + Jev shares separately reviewed conversation information with TypeSafe; Library exploration shares its approved excerpts.
 
 ### Local context and voices
 
-Recommended Local on NVIDIA CUDA defaults to a **128K context window**, with selectable windows up to **256K**. Hardware, model and enabled features determine capacity and speed. Long Local sessions compact working context while retaining recent complete exchanges; saved originals remain unchanged.
+Recommended Local on NVIDIA CUDA defaults to a **128K context window**, with selectable windows up to **256K**. Hardware, model and enabled features determine capacity and speed. Long Local sessions compact working context while retaining recent complete exchanges; saved originals remain unchanged. Local helpers can also handle Study, saving web material, memory-thread suggestions and supported visual observations.
 
 Typed Local conversation needs no listening pack. Optional English microphone input, Windows or Kokoro speech, local semantic search and compatible OBS Vision can be added separately.
 
 **Kokoro remains the recommended local voice for everyday use.** Meta, Claude and ChatGPT can also try **KittenTTS 2 on CPU or NVIDIA GPU**, both experimental. Settings offers verified runtime and model downloads and a timed voice sample. Kitten is substantially heavier than Kokoro, and CPU generation can be slow. Review its model license before downloading. **Powered by KittenML.** Local AI conversations continue to use Windows or Kokoro voices.
 
-The current 0.9.121 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
+The current 0.9.139 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
 
-## What's new since 0.9.114?
+## What's new since 0.9.121?
 
-- **New in 0.9.121:** automatic memory processing retries eligible temporary provider failures during a conversation, with cooldowns and the existing processing schedule. Each attempt rechecks current saving and sharing permissions.
-- **New in 0.9.121:** recovery for indexing later memory batches after a temporary search-embedding failure, more accurate provider error handling and clearer saving-status messages. Earlier missing search vectors still use **Rebuild memory search**.
-- Claude and ChatGPT connections, including personal-memory learning and recall through the selected connection.
-- A redesigned Map with labeled Constellations, navigation trails, theme comparisons and a single evidence panel.
-- Saved topic labels by default, clearer monthly save patterns and repairs for long labels and record bodies.
-- Clearer connection presets and sign-in guidance, masked account labels, actionable model-list errors and automatic disabling of unsupported controls.
-- Optional experimental Kitten CPU/GPU speech with managed downloads, plus speech startup and cancellation repairs.
-- Repairs to Local memory recall after pending saves and reduced repeated processing of saved-area summaries.
+- **New in 0.9.139: a Continuity Map for Local memory.** Each current observation in a Local memory counts toward its themes, people, places and projects named in Local memories become linked themes, and the Map starts on saved labels and repeated wording. Constellations are named after saved topics.
+- **PCS Perspective:** an optional space for PCS's own interests, reflections and open questions, with its own Map, revision history and handoff between models.
+- **Guided setup:** a four-step setup guide, a fictional example to explore first, and a Settings task finder.
+- **Claude and ChatGPT tools:** native Preparation, notebook drafting and organization, PCS Perspective, image sharing, web lookup and Wikipedia Study.
+- **Saving and recall:** a separate check for explicit Remember requests with clearer result cards, recovery of the original passages behind saved accounts, and clearer marking of who said what and when it was recorded.
+- **Search and corrections:** optional cloud memory search indexes complete saved content, memory formation can combine meaning-based matches with word search, and corrections keep their history and status.
+- **Local memory:** each subject keeps one account with its later observations, with repairs for new accounts that were wrongly rejected and requested saves that blocked later automatic saving.
+- **Materials and conversation:** a more compact Materials layout and a sound cue for thinking pauses that follows your voice volume and mute settings.
 
-See the **[0.9.121 release notes][release]** for details and upgrade guidance.
+See the **[0.9.139 release notes][release]** for details and upgrade guidance.
 
 ## Your data and sharing choices
 
@@ -171,7 +187,7 @@ Create an encrypted vault backup, copy original Materials files separately, and 
 
 Keep your previous installation and pre-upgrade backup until you have checked the restored copy. Never run two copies against the same data folder.
 
-**Some saved features raise the vault's minimum reader version.** New correction metadata and Claude/ChatGPT configuration can require **0.9.117 or newer**. Saving Kitten CPU as a voice requires **0.9.120 or newer**; downloading its packs alone does not. Earlier feature requirements still apply. **Check backup** reports the required reader, and Help includes the compatibility table.
+**Some saved features raise the vault's minimum reader version.** Since 0.9.121, PCS Perspective requires **0.9.122**; native Claude/ChatGPT features and Local research require **0.9.126**; the newer cloud search index requires **0.9.130**; and Claude/ChatGPT memory-thread suggestions require **0.9.134**. 0.9.139 adds no new requirement. Earlier requirements still apply, such as **0.9.117** for Claude/ChatGPT configuration and **0.9.120** for the Kitten CPU voice. Opening a vault alone does not add them. **Check backup** reports the required reader, and Help includes the compatibility table.
 
 If upgrading an older proactive-help setup, complete the one-time review through **Review model and inputs → Allow → Save settings**. Other feature permissions remain separate.
 
@@ -179,16 +195,16 @@ If upgrading an older proactive-help setup, complete the one-time review through
 
 PCS is under active development. AI replies, memories, transcription and research can be wrong. Share feedback through [GitHub Issues][issues] or [Discord][discord]. Include your PCS version, connection and reproduction steps. Review diagnostics before sharing and remove keys, passphrases, launch tokens and personal records.
 
-This repository hosts project information and downloads. **[PCS-0.9.121-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
+This repository hosts project information and downloads. **[PCS-0.9.139-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
 
-Use **[PCS-0.9.121-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
+Use **[PCS-0.9.139-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
 
 PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own terms. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.121/PCS-0.9.121-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.121
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [older-platforms]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.114
 [linux-experimental]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.114/PCS-0.9.115-Linux-x64-Experimental.tar.gz
