@@ -201,10 +201,10 @@ Use **[PCS-0.9.139-SHA256SUMS.txt][checksums]** to verify the release archives. 
 
 PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own terms. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest/download/PCS-0.9.139-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/latest
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.139
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [older-platforms]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.114
 [linux-experimental]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.114/PCS-0.9.115-Linux-x64-Experimental.tar.gz
