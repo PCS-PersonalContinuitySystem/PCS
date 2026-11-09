@@ -10,7 +10,7 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 
 **Linux and Mac:** [Experimental Linux x64][linux-experimental] · [Experimental macOS for Apple silicon][mac-experimental] · [Previous release page and source downloads][older-platforms]
 
-> **PCS 0.9.139 · Windows x64 · Under active development**
+> **PCS 0.9.146 · Windows x64 · Under active development**
 >
 > Free and open source, with no PCS subscription or paid feature tiers. Provider API charges and any subscription used for ChatGPT sign-in are separate. Local models, AI runtimes and optional speech packs are separate downloads.
 
@@ -27,7 +27,7 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 | Understand what was remembered | Saved conversations and revisable memories, with original passages, corrections and sharing controls. |
 | Follow how an idea changed | Links between exact memory revisions, settled marks and named lessons with supporting stories. |
 | Find an unexpected connection | A Continuity Map of saved topics and the people, places and projects in them, with the records behind each connection and space for your own notes. |
-| See how PCS's own view develops | Optional PCS Perspective: PCS's interests, reflections and open questions, kept apart from your continuity and open to inspection. |
+| See how PCS's own view develops | Optional PCS Perspective tracks PCS's interests, reflections and open questions separately from your continuity and makes them available for inspection. |
 | Read and learn | Materials readers, bookmarks, Read Along, Prepared notes, notebooks and Practice. |
 | Find your work and plan ahead | A searchable Library and Calendar tasks, goals and events. |
 
@@ -37,11 +37,11 @@ Manual reading, notes, Calendar entries and saved-record browsing work without s
 
 ### Windows
 
-1. Download **[PCS-0.9.139-Windows-x64.zip][windows]** (51 MB) and extract the complete ZIP into a fresh writable folder.
-2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline; no system Python installation is needed.
-3. Choose **Set up PCS**. Four short steps, **Workspace, Connection, Sharing and Review**, create your encrypted vault and choose a connection. Keep the passphrase safe. **Existing users: restore an encrypted backup before creating a new vault** (under **Vault options & restoring a backup** in the first step).
-4. Review what you want to save and share. Setup includes a **Conversation only** option. For **Claude API** or **Sign in with ChatGPT**, unlock the vault and open **Settings → Connections**. Local setup is under **Local model & files**.
-5. Type a message and choose **Start & send**. Microphone use starts off in a new setup. Add voice and other optional tools when you want them; experimental Qwen requires voice.
+1. Download **[PCS-0.9.146-Windows-x64.zip][windows]** (51 MB) and extract the complete ZIP into a fresh writable folder.
+2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline.
+3. Choose **Set up PCS**. The guide walks through **Workspace, Connection, Sharing, Voice, Screen and Review**. Keep your vault passphrase safe. If you're moving an existing vault, follow the [upgrade steps below](#upgrading-and-backups).
+4. Choose **Recommended continuity** or **Conversation only** and review what you want to save and share. If you choose Claude, enter your Claude Console API key in Quick setup. If you choose ChatGPT, finish Quick setup, then sign in and pick a model in **Settings → Connections**. Set up experimental Qwen in **Connections**.
+5. Type a message and choose **Start & send**. The optional **Voice** step guides local voice setup for Meta, Claude, ChatGPT and Local AI. Use **Screen** to connect OBS Studio for Vision.
 6. At a useful stopping point, choose **Keep a stopping point** and review what you want to retain.
 
 Not ready to set up? **See a fictional example** on the welcome screen shows PCS with demonstration records, without adding anything to your vault.
@@ -112,7 +112,7 @@ Links and lessons retain the revisions you reviewed and identify changed or unav
 
 ## PCS Perspective (optional)
 
-PCS Perspective is a separate space in the encrypted vault for PCS's own developing interests, reflections and open questions. It is kept apart from your saved continuity, and it starts **off**.
+PCS Perspective keeps PCS's own developing interests, reflections and open questions in a separate space in your encrypted vault. **Recommended continuity** enables PCS Perspective with independent interests for new vaults. You can change that choice in Settings.
 
 - Inspect each record's wording, supporting references, uncertainty, model authorship and revision history.
 - Explore how its views relate in a dedicated Perspective Map.
@@ -158,20 +158,17 @@ Typed Local conversation needs no listening pack. Optional English microphone in
 
 **Kokoro remains the recommended local voice for everyday use.** Meta, Claude and ChatGPT can also try **KittenTTS 2 on CPU or NVIDIA GPU**, both experimental. Settings offers verified runtime and model downloads and a timed voice sample. Kitten is substantially heavier than Kokoro, and CPU generation can be slow. Review its model license before downloading. **Powered by KittenML.** Local AI conversations continue to use Windows or Kokoro voices.
 
-The current 0.9.139 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
+The current 0.9.146 download is Windows x64. For Linux and Mac, use the experimental downloads listed under **Get started** above.
 
-## What's new since 0.9.121?
+## What's new in 0.9.146?
 
-- **New in 0.9.139: a Continuity Map for Local memory.** Each current observation in a Local memory counts toward its themes, people, places and projects named in Local memories become linked themes, and the Map starts on saved labels and repeated wording. Constellations are named after saved topics.
-- **PCS Perspective:** an optional space for PCS's own interests, reflections and open questions, with its own Map, revision history and handoff between models.
-- **Guided setup:** a four-step setup guide, a fictional example to explore first, and a Settings task finder.
-- **Claude and ChatGPT tools:** native Preparation, notebook drafting and organization, PCS Perspective, image sharing, web lookup and Wikipedia Study.
-- **Saving and recall:** a separate check for explicit Remember requests with clearer result cards, recovery of the original passages behind saved accounts, and clearer marking of who said what and when it was recorded.
-- **Search and corrections:** optional cloud memory search indexes complete saved content, memory formation can combine meaning-based matches with word search, and corrections keep their history and status.
-- **Local memory:** each subject keeps one account with its later observations, with repairs for new accounts that were wrongly rejected and requested saves that blocked later automatic saving.
-- **Materials and conversation:** a more compact Materials layout and a sound cue for thinking pauses that follows your voice volume and mute settings.
+- **Pictures in conversation.** With online lookups allowed, supported connections can show an attributed public picture from Wikipedia. A configured Brave Search key lets PCS look for a picture when Wikipedia has none. PCS discards the pictures when the conversation stops.
+- **Guided setup.** Quick setup now includes Claude and ChatGPT, with steps for local voice and OBS screen sharing. New vaults using **Recommended continuity** start with more optional helpers enabled. Existing vaults keep their saved choices.
+- **Sharing across connections.** Permission to share original conversation excerpts and corrected memories carries over when you change providers. The switch notice names the provider that will receive them. You can turn personal memory sharing off in **Settings → Memory & sharing**.
+- **Conversation and Windows fixes.** Claude and Meta can read an original passage and continue looking up related evidence. File and folder choosers now use the same Windows dialog throughout PCS.
+- **Proactive help removed.** Its tutoring offers were also removed. Vision, PCS Perspective and Read Along remain available.
 
-See the **[0.9.139 release notes][release]** for details and upgrade guidance.
+See the **[0.9.146 release notes][release]** for details and upgrade guidance.
 
 ## Your data and sharing choices
 
@@ -183,28 +180,28 @@ See the **[0.9.139 release notes][release]** for details and upgrade guidance.
 
 ## Upgrading and backups
 
-Create an encrypted vault backup, copy original Materials files separately, and quit PCS. Extract the update into a fresh folder. Open **Start PCS.exe** and choose **Restore an encrypted backup instead** before creating a vault. Check the backup, review its counts and restore it. Follow the included restore guide to reconnect Materials and choose your automatic-backup destination again.
+Save your work, choose **Quit PCS** and wait for shutdown. Back up the entire stopped data folder, including any custom data directory. Copy original Materials separately if they are stored elsewhere.
 
-Keep your previous installation and pre-upgrade backup until you have checked the restored copy. Never run two copies against the same data folder.
+Extract the complete Windows ZIP into a fresh writable folder. Follow the included **Backup & restore** guide to copy or restore your existing data, keeping a separate data folder for each installation. Open **Start PCS.exe**, unlock with your existing passphrase and check your records. Keep the previous installation and backup while you check the update.
 
-**Some saved features raise the vault's minimum reader version.** Since 0.9.121, PCS Perspective requires **0.9.122**; native Claude/ChatGPT features and Local research require **0.9.126**; the newer cloud search index requires **0.9.130**; and Claude/ChatGPT memory-thread suggestions require **0.9.134**. 0.9.139 adds no new requirement. Earlier requirements still apply, such as **0.9.117** for Claude/ChatGPT configuration and **0.9.120** for the Kitten CPU voice. Opening a vault alone does not add them. **Check backup** reports the required reader, and Help includes the compatibility table.
+**Some saved features raise the vault's minimum reader version.** Since 0.9.121, PCS Perspective requires **0.9.122**; native Claude/ChatGPT features and Local research require **0.9.126**; the newer cloud search index requires **0.9.130**; and Claude/ChatGPT memory-thread suggestions require **0.9.134**. Versions 0.9.140 through 0.9.146 add no new requirement. Earlier requirements still apply, such as **0.9.117** for Claude/ChatGPT configuration and **0.9.120** for the Kitten CPU voice. Opening a vault alone does not add them. **Check backup** reports the required reader, and Help includes the compatibility table.
 
-If upgrading an older proactive-help setup, complete the one-time review through **Review model and inputs → Allow → Save settings**. Other feature permissions remain separate.
+If you used proactive help, **Save settings** clears its old settings. If you also use Jev, it asks for a fresh review.
 
 ## Feedback, source and license
 
 PCS is under active development. AI replies, memories, transcription and research can be wrong. Share feedback through [GitHub Issues][issues] or [Discord][discord]. Include your PCS version, connection and reproduction steps. Review diagnostics before sharing and remove keys, passphrases, launch tokens and personal records.
 
-This repository hosts project information and downloads. **[PCS-0.9.139-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
+This repository hosts project information and downloads. **[PCS-0.9.146-Source.zip][source]** contains the application source, tests and build support. GitHub's automatic **Source code** archive contains this download repository.
 
-Use **[PCS-0.9.139-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
+Use **[PCS-0.9.146-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
 
 PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own terms. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.139/PCS-0.9.139-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.139
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.146/PCS-0.9.146-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.146/PCS-0.9.146-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.146/PCS-0.9.146-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.146
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [older-platforms]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.114
 [linux-experimental]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.114/PCS-0.9.115-Linux-x64-Experimental.tar.gz
