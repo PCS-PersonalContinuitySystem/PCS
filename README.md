@@ -10,7 +10,7 @@ Some thoughts need more than one conversation. PCS brings AI conversation, revis
 
 **Other platforms:** [Older experimental Linux x64][linux-experimental] · [Older experimental macOS for Apple silicon][mac-experimental] · [Archived platform downloads][older-platforms]
 
-> **PCS 0.9.164 · Windows x64 · Under active development**
+> **PCS 0.9.180 · Windows x64 · Under active development**
 >
 > Free and open source, with no PCS subscription or paid feature tiers. Provider API charges and any subscription used for ChatGPT sign-in are separate. Local models, AI runtimes and optional speech packs are separate downloads.
 
@@ -38,11 +38,11 @@ Manual reading, notes, Calendar entries and saved-record browsing work without s
 
 ### Windows
 
-1. Download **[PCS-0.9.164-Windows-x64.zip][windows]** (42 MB) and extract the complete ZIP into a fresh writable folder.
+1. Download **[PCS-0.9.180-Windows-x64.zip][windows]** (42 MB) and extract the complete ZIP into a fresh writable folder.
 2. Open **Start PCS.exe**. First launch prepares the bundled Python environment offline.
 3. Choose **Get started**. Quick setup walks through **Workspace, Connection, Sharing, Voice, Screen and Review**. Keep your vault passphrase safe. If you're moving an existing vault, follow the [upgrade steps below](#upgrading-and-backups).
-4. Choose a connection, then review **Recommended continuity** or **Conversation only** and what you want to save and share. OpenRouter is included in Quick setup: enter its key, load the public catalogue and choose an exact model with tool support. **Free models only** and **Image-capable models only** filter the list without changing your choice. Quick setup also saves the recommended OpenRouter memory model, `anthropic/claude-haiku-5.5`, when none is set. Claude uses its Console API key. For ChatGPT, finish Quick setup, sign in once, then choose **Get ChatGPT ready** under **Start PCS** or in **Settings → Connections**: it finds the saved account and loads its models in one click. Local setup guides you to its model and runtime files. Review your choices, including any optional Voice and Screen setup, then choose **Finish setup**.
-5. Choose **Get acquainted →** for a first conversation that PCS begins, or type a message and choose **Start & send**. The optional **Voice** step guides local listening and speech for Meta, Claude, ChatGPT, OpenRouter and Local AI; a spoken turn can run to 60 seconds. Use **Screen** to connect OBS Studio and choose the scene PCS may see. OpenRouter Vision needs an image-capable model; Finish checks the selected model's advertised tool/image support without generating a reply.
+4. Choose a connection, then review **Recommended continuity** or **Conversation only** and what you want to save and share. OpenRouter is included in Quick setup: enter its key, load the public catalogue and choose an exact model with tool support. **Free models only** and **Image-capable models only** filter the list without changing your choice. Quick setup also saves the recommended OpenRouter memory model, `anthropic/claude-haiku-5.5`, when none is set. Claude uses its Console API key; with Recommended continuity a new Claude setup uses Haiku 5.5 for memory and keeps your chosen model for conversation. For ChatGPT, finish Quick setup, sign in once, then choose **Get ChatGPT ready** under **Start PCS** or in **Settings → Connections**: it finds the saved account and loads its models in one click. Local setup guides you to its model and runtime files. Review your choices, including any optional Voice and Screen setup, then choose **Finish setup**.
+5. Choose **Get acquainted →** for a first conversation that PCS begins, or type a message and choose **Start & send**. The optional **Voice** step guides local listening and speech for Meta, Claude, ChatGPT, OpenRouter and Local AI; a spoken turn can run to 60 seconds and ends after 1.5 seconds of silence. Use **Screen** to connect OBS Studio and choose the scene PCS may see. OpenRouter Vision needs an image-capable model; Finish checks the selected model's advertised tool/image support without generating a reply.
 6. At a useful stopping point, choose **Keep a stopping point** and review what you want to retain.
 
 The welcome screen matches where you are: **Get started** for a new workspace, **Nice to meet you.** once your vault is open and nothing is saved yet, and **Pick up where you left off.** when saved memories exist. Not ready to set up? **See an example** shows a fictional stopping point without adding anything to your vault.
@@ -58,7 +58,7 @@ Experimental builds are available on the **[previous release page, tagged 0.9.11
 | **Linux x64** | [PCS 0.9.115 - experimental build][linux-experimental] (`.tar.gz`) |
 | **macOS - Apple silicon (arm64)** | [PCS 0.9.114 - Experimental 1][mac-experimental] (`.zip`) |
 
-These are archived experiments, not 0.9.164 ports. They do not include the current Windows features or its verification. Follow their own bundled platform instructions. Matching source archives are on the same [release page][older-platforms].
+These are archived experiments, not 0.9.180 ports. They do not include the current Windows features or its verification. Follow their own bundled platform instructions. Matching source archives are on the same [release page][older-platforms].
 
 ## Bring one unfinished thing
 
@@ -102,6 +102,8 @@ Saving conversation text and allowing memory formation are separate choices. Wit
 
 On cloud connections, PCS checks where each new thing you said was filed, so a new subject gets a memory of its own instead of being added to an unrelated one. An automatic update can no longer cut a memory down to a fraction of what it held; if the model tries, the memory is left as it stands. **Stop** gives cloud memory one short last pass, up to 20 seconds, so what you said just before stopping is not left for next time. Local AI keeps its own memory checks.
 
+Memory jobs are harder to derail. A memory the review accepted is saved even when the summary written with it is rejected. A stretch of small talk no longer erases the summary PCS starts the next conversation with. When a batch of conversation is too much for the memory model in one go, PCS tries again with half as much, and a batch that fails for a reason of its own is set aside so that newer conversation is still learned. A save waits briefly for a reply that is being written, so the reply is not lost.
+
 Deleting a memory offers **Also delete the conversation this came from**. It shows how much will be removed, warns when the memory draws on more than one conversation, and keeps anything another memory still uses.
 
 When you ask PCS to remember something, the request gets its own check, and the result card shows whether the save was confirmed, did not succeed or left a record unchanged. Correction screens show that saving your wording and rebuilding semantic search are separate steps; saved corrections keep their history and current status.
@@ -118,7 +120,22 @@ Links and lessons retain the revisions you reviewed and identify changed or unav
 
 **Memory can follow your conversation connection.** Google, OpenAI, Meta, Claude, signed-in ChatGPT, OpenRouter and Local support their permitted memory workflows within the selected model's capabilities. OpenRouter can use its own key and explicit model for learning, Remember requests, corrections and recall; another provider is not required. The recommended OpenRouter memory model is `anthropic/claude-haiku-5.5`, and **Settings** offers **Use recommended**. Optional helper choices remain explicit, and PCS does not automatically switch providers after a failure.
 
+On Claude, memory can use its own model: **Settings → Connections → Memory**. New Claude setups with Recommended continuity use Haiku 5.5 for memory, which costs much less per request; existing setups keep what they have until you change it. This choice rests on one test with a made-up conversation and has not been tried on a real vault.
+
 **Help notice relevant memories in conversation** is included in **Recommended continuity** and can be changed under **Settings → Memory & sharing**. It requires memory-sharing permission. Supported routes can use a compact overview or matching cues to help find saved context. A cue sent to a cloud provider shares that information; hints do not guarantee a relevant memory will be found.
+
+### Memory that comes to mind (experimental)
+
+Three settings change what the AI model is given from your saved memories. All three are off unless you turn them on, Quick setup does not turn them on, and each takes effect at the next Start.
+
+- **Let memories come to mind on their own** (**Settings → Memory & sharing → Personal memory**). PCS looks on your PC for saved memories and earlier turns related to what you just said, and gives the model up to three. When nothing is clearly related, it gives nothing.
+  - On Local AI, Meta, Claude, ChatGPT and OpenRouter this adds no AI request.
+  - On OpenAI Realtime a match can go with the first spoken reply. A match that arrives late can lead to a follow-up, and **a follow-up or a short wait for one can cost an additional paid reply**.
+  - On Google Live (paid personal-content connection) a match from the exchange you just finished is offered as you start speaking again, **before PCS knows your new topic**. If you change subject, Google may still receive the earlier detail; PCS asks it to leave the detail out.
+- **Start with a fuller picture of what PCS knows** (same place). At each Start PCS builds a short picture from your saved memories: your name, up to five ongoing subjects and your last conversation. It is rebuilt every time, so a memory you corrected or deleted cannot stay in it.
+- **Show what PCS has in mind** (**Settings → Conversation → Session**). The Memory stream panel lists what the model was given, by subject and size.
+
+These settings match words, not meaning, and the model can still overlook or contradict a memory it was given. In a scripted spoken test on OpenAI Realtime, 2 of 4 cases were answered correctly. Treat them as experiments and tell us how they feel.
 
 ## PCS Perspective (optional)
 
@@ -160,7 +177,7 @@ Optional **Explore connections** in the Library lets you select records, add a q
 | **ChatGPT sign-in** | Eligible signed-in account and an available model; no API key. **Get ChatGPT ready** prepares it in one click. | Optional local listening and speech. |
 | **OpenRouter** | OpenRouter API key and an explicit model with PCS tool support; image capability is needed for Vision. | Optional local listening and speech. |
 
-Typed cloud conversation needs no Local language model or speech pack. With local listening, a spoken turn can run to 60 seconds, with a warning at 50. Cloud Vision sends approved OBS images; Local Vision also needs the matching image projector. On Meta, Claude, ChatGPT and OpenRouter, PCS's opening line and replies to turns without an image are no longer lost when a screen capture fails or Vision pauses mid-reply.
+Typed cloud conversation needs no Local language model or speech pack. With local listening, a spoken turn can run to 60 seconds, with a warning at 50. Cloud Vision sends approved OBS images; Local Vision also needs the matching image projector. On Meta, Claude, ChatGPT and OpenRouter, PCS's opening line and replies to turns without an image are no longer lost when a screen capture fails or Vision pauses mid-reply. A failed OBS capture that a fresh connection can cure (a timeout or a dropped connection) no longer pauses Vision: PCS reconnects and tries twice more first.
 
 **ChatGPT sign-in is separate from the OpenAI API connection.** It does not import ChatGPT history, provide unlimited usage or silently fall back to API billing. Each newly opened PCS page needs **Get ChatGPT ready** again. Claude API uses its Console key, rather than a Claude subscription login.
 
@@ -184,21 +201,22 @@ Typed Local conversation needs no listening pack. Optional English microphone in
 
 **Kokoro remains the recommended local voice for everyday use.** Meta, Claude, ChatGPT and OpenRouter can also try **KittenTTS 2 on CPU or NVIDIA GPU**, both experimental. Settings offers verified runtime and model downloads and a timed voice sample. Kitten is substantially heavier than Kokoro, and CPU generation can be slow. Review its model license before downloading. **Powered by KittenML.** Local AI conversations continue to use Windows or Kokoro voices.
 
-The current 0.9.164 application download is Windows x64. Older Linux and Mac experiments are listed under **Get started** above.
+The current 0.9.180 application download is Windows x64. Older Linux and Mac experiments are listed under **Get started** above.
 
-## What's new in 0.9.164?
+## What's new in 0.9.180?
 
-Since the previous public release, 0.9.154:
+Since the previous public release, 0.9.164:
 
-- **A gentle first conversation:** **Get acquainted**, which PCS begins, replaces the six-question starting map, and the welcome screen now matches where you are.
-- **A tidier Conversation page:** a simpler top bar, Research and Practice started from Materials, and **Research this question** under the message box. **Explore another perspective** is removed; use PCS Perspective instead.
-- **Memory that keeps subjects apart:** on cloud connections a new subject gets its own memory, an update can no longer shrink a memory to a fraction of itself, **Stop** gives memory one short last pass, and a memory can be deleted together with its conversation.
-- **PCS Perspective that thinks before it speaks:** each step thinks first and then files its conclusion, finished thoughts can be worked into PCS's next reply, and PCS's default character has opinions, tastes and dry humor.
-- **One Map and a fuller Start summary:** the Map opens on **All links** with recency, highlights and **PCS's thoughts resting here**, shows up to 1,000 themes and 10,000 connections, and cloud connections are told more of it at Start.
-- **Voice and providers:** 60-second spoken turns on Claude, Meta, ChatGPT and OpenRouter; opening lines and replies no longer lost when Vision pauses; Google Live resumes after inactivity closes; a recommended OpenRouter memory model; one-click **Get ChatGPT ready**.
-- **Smaller download:** the Windows ZIP holds the application, offline runtime and user guides; tests, developer documents and build tools are in the Source ZIP. `support\start.ps1 -Verify` checks an installation offline.
+- **Memory that comes to mind (experimental, off unless you turn it on):** saved memories related to what you just said can reach the model on their own, on every connection including OpenAI Realtime and Google Live; a fuller Start picture built from your current records; and a panel showing what the model was given.
+- **Memory jobs that finish:** PCS Perspective and memory formation take turns instead of cancelling each other; an accepted memory is kept when only its summary is rejected; small talk no longer erases the Start summary; an oversized batch is split; a failed batch no longer blocks everything after it.
+- **Replies that are not lost:** a save waits for a reply that is being written, and Claude no longer mistakes your message for part of a memory note.
+- **A cheaper model for Claude memory:** memory on Claude can use its own model, and new Recommended setups use Haiku 5.5.
+- **Faster, steadier local speech:** on NVIDIA cards local listening and the Kokoro voice are ready in about 6 seconds instead of 32 on the test PC; a spoken turn ends after 1.5 seconds of silence; coughs and room noise are no longer typed as words.
+- **Vision that survives a failed capture:** after a timeout or a dropped connection PCS reconnects to OBS and tries twice more before pausing.
+- **Web search on Claude and ChatGPT** reaches the conversation again.
+- **A more useful bug report:** it says how a screen capture failed and counts the tokens of each memory request, in numbers and fixed words only.
 
-See the **[0.9.164 release notes][release]** for the full changes, known limits and upgrade guidance.
+See the **[0.9.180 release notes][release]** for the full changes, known limits and upgrade guidance.
 
 ## Your data and sharing choices
 
@@ -214,9 +232,11 @@ Save your work and make an encrypted backup. Choose **Quit PCS** and wait for sh
 
 Extract the complete Windows ZIP into a fresh writable folder. Follow the **Backup & restore** guide bundled with the release to copy or restore your vault, keeping separate data folders for separate installations. Open **Start PCS.exe**, unlock with your passphrase and inspect your records. Keep the previous installation and pre-upgrade backup until you have checked the update.
 
-**Newly saved features can raise the vault's minimum supported PCS version.** OpenRouter connection data requires **0.9.151 or later**; OpenRouter helper data and Practice assessments exceeding the former 4 KiB record limit require **0.9.152 or later**. Versions 0.9.155 to 0.9.164 add no new requirement. Earlier feature requirements still apply. Opening the app alone does not activate these requirements, and deleting newer records does not lower a recorded requirement. Use **Check backup** to see the copy's actual reader requirement.
+**Newly saved features can raise the vault's minimum supported PCS version.** OpenRouter connection data requires **0.9.151 or later**; OpenRouter helper data and Practice assessments exceeding the former 4 KiB record limit require **0.9.152 or later**. Versions 0.9.155 to 0.9.180 add no new requirement. Earlier feature requirements still apply. Opening the app alone does not activate these requirements, and deleting newer records does not lower a recorded requirement. Use **Check backup** to see the copy's actual reader requirement.
 
 If you use OpenRouter with a small open model, choose a memory model in Settings; **Use recommended** sets `anthropic/claude-haiku-5.5`. An existing blank memory-model setting is not changed for you. Research and Practice now start from **Materials**.
+
+Coming from 0.9.164: the three experimental memory settings stay off until you turn them on, and an existing Claude setup keeps its memory model. If **Let memories come to mind on their own** is already on in your vault, it now also applies on OpenAI Realtime and Google Live, where it can add paid replies. With local speech on an NVIDIA card, the first Start after installing takes about half a minute longer than later ones.
 
 Existing settings are preserved apart from retired controls and recognized factory Companion direction wording, which moves to the new default. New Recommended defaults apply to new vaults; review optional features in your own setup. Coming from a version before 0.9.154? The direct Qwen connection, automatic activity following and proactive help are retired; see the earlier release notes.
 
@@ -224,18 +244,18 @@ Existing settings are preserved apart from retired controls and recognized facto
 
 PCS is under active development. AI replies, memories, transcription and research can be wrong. Share feedback through [GitHub Issues][issues] or [Discord][discord]. Include your PCS version, connection and reproduction steps. Review diagnostics before sharing and remove keys, passphrases, launch tokens and personal records.
 
-On the 0.9.164 release tree, the full Python suite ran **17,750 tests**: 17,741 passed, 8 were skipped, and 1 failed under parallel load and passed when run alone. All **3,539 JavaScript tests** passed. Scripted test conversations on Google, OpenAI, Claude, ChatGPT and OpenRouter checked that separate subjects got separate memories (one run per provider unless stated, not blind graded). The 0.9.164 voice and Vision repairs are covered by automated tests and a reproduction of the reported failure, not by a live provider and microphone. Physical devices, personal vaults, long sessions and a fresh installation have not been qualified for this release.
+On the 0.9.180 release tree, the full Python suite ran **18,306 tests**: 18,296 passed, 9 were skipped, and 1 failed under parallel load and passed when run alone. All **3,561 JavaScript tests** passed. Earlier versions in this range were tried in typed test conversations on Claude, Meta, OpenRouter, Google and OpenAI with a made-up vault (one to three conversations per provider, not blind graded) and in spoken conversations on Claude. The newest parts have less behind them: arriving memory on OpenAI Realtime and Google Live was tried only in short scripted sessions with synthetic speech, the Claude memory model rests on one test, and the changes in 0.9.180 itself are covered by automated tests only. Physical devices, personal vaults, long sessions and a fresh installation have not been qualified for this release.
 
-This repository hosts project information and downloads. **[PCS-0.9.164-Source.zip][source]** contains the application source, tests, developer documents and build tools; the Windows ZIP no longer includes them. GitHub's automatic **Source code** archive contains this download repository.
+This repository hosts project information and downloads. **[PCS-0.9.180-Source.zip][source]** contains the application source, tests, developer documents and build tools; the Windows ZIP no longer includes them. GitHub's automatic **Source code** archive contains this download repository.
 
-Use **[PCS-0.9.164-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
+Use **[PCS-0.9.180-SHA256SUMS.txt][checksums]** to verify the release archives. Earlier versions are under [Releases][releases].
 
 PCS first-party code is licensed under **GPL-3.0-only**, without warranty. Third-party components retain their own terms. See [LICENSE][license], [COPYRIGHT][copyright] and [third-party notices][third-party]. Optional contributions through [Ko-fi][kofi] help support development.
 
-[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.164/PCS-0.9.164-Windows-x64.zip
-[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.164/PCS-0.9.164-Source.zip
-[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.164/PCS-0.9.164-SHA256SUMS.txt
-[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.164
+[windows]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.180/PCS-0.9.180-Windows-x64.zip
+[source]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.180/PCS-0.9.180-Source.zip
+[checksums]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.180/PCS-0.9.180-SHA256SUMS.txt
+[release]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.180
 [releases]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases
 [older-platforms]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/tag/v0.9.114
 [linux-experimental]: https://github.com/PCS-PersonalContinuitySystem/PCS/releases/download/v0.9.114/PCS-0.9.115-Linux-x64-Experimental.tar.gz
